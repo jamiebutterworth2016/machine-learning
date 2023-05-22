@@ -1,6 +1,38 @@
-# machine-learning
-Machine learning notes
+# 2. Machine learning
+```
+Computer science -> Data science -> AI -> Machine learning
+```
+- Self-learning - not explicitly programmed.
+- Using data instead of programming.
+- Using experience to find patterns in data.
+- Analysing both input and output variables.
+```
+//Explicit progamming
+Input: Command -> Output: Action
 
+//Machine learning
+Input: Data -> Learning: Model -> Output: Action
+```
+## Build a decision model.
+1. Feed data into the model.
+2. Select an algorithm.
+3. Tweak settings to reduce prediction error.
+
+- The decision model improves its predictions based on experience.
+- The more data, the more predictions the model can make.
+
+## Training and Test data
+- Input data is split into training data and test data.
+- Use the training data to build the model.
+- The model makes predictions.
+- When you're satisfied with the accuracy of the predictions, use the test data to test the model.
+
+## Techniques
+|                                      | Known Input | Known Output |                                                                     |
+| ------------------------------------ | ----------- | ------------ | ------------------------------------------------------------------- |
+| Data mining or Unsupervised learning | Y           |              | Analyse inputs -> generate output                                   |
+| Supervised learning                  | Y           | Y            | Analyse inputs and outputs -> predict future outputs for new inputs |
+| Reinforced learning                  |             | Y            | Trial high number of inputs -> produce desired output               |
 
 
 # 6. Data scrubbing
@@ -19,20 +51,20 @@ Machine learning notes
 
 - Before merge:
 
-|   | Apples | Oranges | Carrots | Peas |
-|---|--------|---------|---------|------|
-| 1 | 1      | 0       | 0       | 0    |
-| 2 | 1      | 1       | 0       | 0    |
-| 3 | 0      | 1       | 1       | 1    |
+|     | Apples | Oranges | Carrots | Peas |
+| --- | ------ | ------- | ------- | ---- |
+| 1   | 1      | 0       | 0       | 0    |
+| 2   | 1      | 1       | 0       | 0    |
+| 3   | 0      | 1       | 1       | 1    |
 
 
 - After merge:
 
-|   | Fruit | Veg |
-|---|-------|-----|
-| 1 | 1     | 0   |
-| 2 | 2     | 0   |
-| 3 | 1     | 2   |
+|     | Fruit | Veg |
+| --- | ----- | --- |
+| 1   | 1     | 0   |
+| 2   | 2     | 0   |
+| 3   | 1     | 2   |
 
 ## Row compression
 - Reduce the number of rows to simplify the dataset.
@@ -41,7 +73,7 @@ Machine learning notes
 - Before merge:
 
 |          | Meat Eater | Legs | Tail | Race Time  |
-|----------|------------|------|------|------------|
+| -------- | ---------- | ---- | ---- | ---------- |
 | Tiger    | 1          | 4    | 1    | 2:01 mins  |
 | Lion     | 1          | 4    | 1    | 2:05 mins  |
 | Tortoise | 0          | 4    | 0    | 55:02 mins |
@@ -49,7 +81,7 @@ Machine learning notes
 - After merge:
 
 |           | Meat Eater | Legs | Tail | Race Time  |
-|-----------|------------|------|------|------------|
+| --------- | ---------- | ---- | ---- | ---------- |
 | Carnivore | 1          | 4    | 1    | 2:03 mins  |
 | Tortoise  | 0          | 4    | 0    | 55:02 mins |
 
