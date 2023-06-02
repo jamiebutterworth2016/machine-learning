@@ -1,4 +1,4 @@
-# 2. Machine learning
+# Machine learning
 ```
 Computer science -> Data science -> AI -> Machine learning
 ```
@@ -13,13 +13,18 @@ Input: Command -> Output: Action
 //Machine learning
 Input: Data -> Learning: Model -> Output: Action
 ```
-## Build a decision model.
+
+<br/>
+
+## Build a decision model
 1. Feed data into the model.
-2. Select an algorithm.
+2. Choose an algorithm (there are hundreds to choose from!)
 3. Tweak settings to reduce prediction error.
 
 - The decision model improves its predictions based on experience.
 - The more data, the more predictions the model can make.
+
+<br/>
 
 ## Training and Test data
 - Input data is split into training data and test data.
@@ -27,23 +32,69 @@ Input: Data -> Learning: Model -> Output: Action
 - The model makes predictions.
 - When you're satisfied with the accuracy of the predictions, use the test data to test the model.
 
-## Techniques
-|                                      | Known Input | Known Output |                                                                     |
-| ------------------------------------ | ----------- | ------------ | ------------------------------------------------------------------- |
-| Data mining or Unsupervised learning | Y           |              | Analyse inputs -> generate output                                   |
-| Supervised learning                  | Y           | Y            | Analyse inputs and outputs -> predict future outputs for new inputs |
-| Reinforced learning                  |             | Y            | Trial high number of inputs -> produce desired output               |
+<br/><br/>
 
+# Machine learning categories
+|                       | Known Input | Known Output |                                                                     |
+| --------------------- | ----------- | ------------ | ------------------------------------------------------------------- |
+| Supervised learning   | Y           | Y            | Analyse inputs and outputs -> predict future outputs for new inputs |
+| Unsupervised learning | Y           |              | Analyse inputs -> generate output                                   |
+| Reinforced learning   |             | Y            | Trial high number of inputs -> produce desired output               |
+
+<br/><br/>
+
+# Supervised learning
+- I can see the output.
+- I can figure out which inputs created that output.
+- I can see the price of a car (output).
+- I can see the issue date and mileage of the car (inputs).
+- The model works backward to find the relationship between the output and its inputs.
+
+| Issue date (Input) | Mileage (Input) | Price (Output) |
+| ------------------ | --------------- | -------------- |
+| 2000               | 100000          | 100            |
+| 2005               | 100000          | 500            |
+| 2010               | 1000            | 5000           |
+| 2015               | 2500            | 5000           |
+| 2020               | 75000           | 2500           |
+
+## Supervised learning algorithms
+
+### Linear regression
+- Straight line
+- Useful for quanitifying linear relationships between input (X) and output (y).
+- I can choose X and follow the line to see where y will be.
+
+![linear regression](/linear%20regression.GIF "linear regression")
+
+### Logistic regression
+
+### K-nearest neighbours
+
+## Unsupervised learning
+- Inputs are labelled (known).
+- Outputs are unlabelled (unknown).
+- A set of inputs.
+- I find patterns between inputs.
+- I categorise inputs.
+
+| Issue date (Input) | Mileage (Input) |     |      |
+| ------------------ | --------------- | --- | ---- |
+| 2000               | 100000          | OLD | HIGH |
+| 2005               | 100000          | OLD | HIGH |
+| 2010               | 1000            | OLD | LOW  |
+| 2015               | 2500            | OLD | LOW  |
+| 2020               | 75000           | NEW | HIGH |
 
 # 6. Data scrubbing
-- The clean-up prcess.
+- The clean-up process.
 - Refine the dataset to make it more workable.
 - Modify bad data.
 - Remove incomplete, incorrectly formatted, irrelevant, duplicated data.
 - Convert strings to numbers.
 
 ## Feature selection
-- Idenfify which columns you want in your model.
+- Identify which columns you want in your model.
 - Reduce the number of columns as much as possible to make the model more simple and accurate.
 - Remove irrelevant columns. They cause over-complication and inaccuracy.
 - Remove duplicate columns.
