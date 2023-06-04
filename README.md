@@ -37,54 +37,15 @@ Input: Data -> Learning: Model -> Output: Action
 # Machine learning categories
 |                       | Known Input | Known Output |                                                                     |
 | --------------------- | ----------- | ------------ | ------------------------------------------------------------------- |
-| Supervised learning   | Y           | Y            | Analyse inputs and outputs -> predict future outputs for new inputs |
-| Unsupervised learning | Y           |              | Analyse inputs -> generate output                                   |
+| Supervised learning   | Y           | Y            | Predict future outputs for new inputs |
+| Unsupervised learning | Y           |              | Generate outputs by categorising inputs                                   |
 | Reinforced learning   |             | Y            | Trial high number of inputs -> produce desired output               |
 
 <br/><br/>
 
-# Supervised learning
-- I can see the output.
-- I can figure out which inputs created that output.
-- I can see the price of a car (output).
-- I can see the issue date and mileage of the car (inputs).
-- The model works backward to find the relationship between the output and its inputs.
-
-| Issue date (Input) | Mileage (Input) | Price (Output) |
-| ------------------ | --------------- | -------------- |
-| 2000               | 100000          | 100            |
-| 2005               | 100000          | 500            |
-| 2010               | 1000            | 5000           |
-| 2015               | 2500            | 5000           |
-| 2020               | 75000           | 2500           |
-
-## Supervised learning algorithms
-
-### Linear regression
-- Straight line
-- Useful for quanitifying linear relationships between input (X) and output (y).
-- I can choose X and follow the line to see where y will be.
-
-![linear regression](/linear%20regression.GIF "linear regression")
-
-### Logistic regression
-
-### K-nearest neighbours
-
-## Unsupervised learning
-- Inputs are labelled (known).
-- Outputs are unlabelled (unknown).
-- A set of inputs.
-- I find patterns between inputs.
-- I categorise inputs.
-
-| Issue date (Input) | Mileage (Input) |     |      |
-| ------------------ | --------------- | --- | ---- |
-| 2000               | 100000          | OLD | HIGH |
-| 2005               | 100000          | OLD | HIGH |
-| 2010               | 1000            | OLD | LOW  |
-| 2015               | 2500            | OLD | LOW  |
-| 2020               | 75000           | NEW | HIGH |
+1. [Supervised learning](supervised-learning.md)
+2. [Unsupervised learning](unsupervised-learning.md)
+3. Reinforced learning - TODO.
 
 # 6. Data scrubbing
 - The clean-up process.
