@@ -24,7 +24,7 @@ Both inputs and output are known.
 | 8                  | 32                   |
 | 9                  | 38                   |
 
-- The graph is a *scatterplot*. The line is a *hyperplane*.
+- The graph is a *scatterplot*. The line is a *hyperplane* used to make numeric predictions.
 - I can find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
 - The nearer the value is to the line (vertically), the more accurate the model's predictions are.
 - The distance between the line and a value is called the *error*.
@@ -34,28 +34,62 @@ Both inputs and output are known.
 
 </br>
 
-## Multiple linear regression
+### Multiple linear regression
 - Multiple inputs, single output.
 - The output must be a number.
 - Inputs can be categorical variables (e.g. gender) but but must be expressed numerically (0 or 1), not as strings ("male", "female").
+- Companies more likely to want to map many inputs to a predicted output.
 
 ![multiple linear regression](/multiple%20linear%20regression.png "multiple linear regression")
 
 
 ## Logistic regression
-- A categorisation technique to split data into two classes.
-- Produces a qualitative prediction (category) rather than a quantitative prediction.
-- Uses the sigmoid function to find the probability of inputs producing discrete categorised outputs.
+- Classification technique.
+- The logistic hyperplane is a classification boundary which splits data into two classes.
+- Uses the sigmoid function to find the probability of inputs producing classified outputs.
 
 ```
 y = 1 / 1 + e^-x
 
-e = Euler's constant, 2.718
+e = 2.718 (Euler's constant) 
 ```
 
-- The sigmoid function produces a S-shaped curve which converts any number and maps it into a number between 0 and 1.
+- The sigmoid function produces an S-shaped curve.
+- Converts an input into to a number between 0 and 1, in relation to the output.
+- 0 to 1 is an expression of probability.
+- 0 = no chance of occurring.
+- 1 = chance of occurring.
+- Data points 0.5 to 1 are assigned to class A.
+- Data points 0 to 0.5 are assigned to class B.
+- The sigmoid function rarely produces exactly 0.5 (unclassifiable).
+- The output is not placed along the y-axis.
+- The output is the position of the point in relation to the hyperplane, which determines the classification of the inputs.
 
+*Sigmoid function splitting points into two classes.*
 ![sigmoid function](/sigmoid.png "sigmoid function")
 
+![classified](/logistic%20regression%20classified%202.png "classified")
 
-## K-nearest neighbours
+### Multinomial logistic regression
+- For when the output can be more than two classes.
+- Logistic regression's strength is binary prediction, other  
+classification algorithms like descition trees or support vector machines may be a better option for solving multiclassification.
+- Data should be free of missing values.
+- Inputs should not be strongly correlated with each other.
+- At least 30 points for each output to ensure high accuracy.
+
+![multinomial logistic regression](/multinomial%20logistic%20regression.png "multinomial logistic regression")
+
+## K-nearest neighbours (k-NN)
+- Classification technique.
+- Classifies new points relative to how near they are to existing points.
+- k is the number of existing points we use to determine which class a new point belongs to.
+- k must be an uneven number.
+- I set k to 3.
+- A new point is placed on the graph.
+- I find the new point's 3 nearest neighbouring points.
+- I note the class of each neighbouring point.
+- The new point belongs to the class with the most neighbouring points.
+- E.g. 1 neighbouring point belongs to class A. 2 neighbouring points belong to class B. The new point belongs to class B.
+
+![k-nearest neighbours](/k-nearest%20neighbours.png "k-nearest neighbours")
