@@ -47,6 +47,9 @@ Input: Data -> Learning: Model -> Output: Action
 2. [Unsupervised learning](unsupervised-learning.md)
 3. Reinforced learning - TODO.
 
+<br/><br/>
+
+
 # 6. Data scrubbing
 - The clean-up process.
 - Refine the dataset to make it more workable.
@@ -116,3 +119,33 @@ Input: Data -> Learning: Model -> Output: Action
 - Scikit-learn compares the predictions of the model to the correct output (y) and measures the model's accuracy.
 - The model is accurate when the error rate is low.
 - High accuracy means the model has learnt the data's patterns.
+
+<br/><br/>
+
+# 11. Prediction accuracy - Bias & Variance
+## Hyperparameters
+- Hyperparameters are algorithm settings.
+- We test different variations of parameters until we settle on the variation which produces the most accurate predictions.
+![hyperparameters](/hyperparameters.png "hyperparameters")
+
+<br/>
+
+## Bias and variance
+- Both bias and variance contribute to error (inaccuracy).
+- Bias is how accurate my prediction is.
+- Variance is how scattered my predictions are.
+- We want the model to make predictions which are accurate (low bias) and close together (low variance).
+
+![bias-and-variance](/bias-and-variance.png "bias and variance")
+
+<br/>
+
+## Model complexity
+- When finding the perfect algorithm and parameters, there is a trade-off between optimal bias and optimal variance.
+- Initially the model is simple. Predictions are close together but inaccurate (high bias, low variance).
+- As we increase the model's complexity, predictions become more accurate and slightly more scattered (mid bias, mid variance).
+- If we make the model too complicated, test data predictions become too scattered (too high variance).
+
+![model-complexity](/model-complexity.png "model complexity")
+
+![model-complexity-2](/model-complexity-2.png "model complexity 2")

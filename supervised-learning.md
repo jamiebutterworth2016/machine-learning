@@ -10,6 +10,12 @@ Both inputs and output are known.
 
 # Supervised learning algorithms
 
+- Linear regression
+- Logistic regression
+- k-nearest neighbours
+
+</br>
+
 ## Linear regression
 
 | Season (Input / X) | Viewers (Output / y) |
@@ -100,6 +106,3 @@ classification algorithms like descition trees or support vector machines may be
 - Setting k to an uneven number eliminates the possibility of a stalemate.
 - 5 is the default when using Scikit-learn.
 - k-NN is not recommended for large datasets.
-
-## k-means clustering
-- 
