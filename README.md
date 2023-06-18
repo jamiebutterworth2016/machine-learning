@@ -122,30 +122,39 @@ Input: Data -> Learning: Model -> Output: Action
 
 <br/><br/>
 
-# 11. Prediction accuracy - Bias & Variance
-## Hyperparameters
-- Hyperparameters are algorithm settings.
-- We test different variations of parameters until we settle on the variation which produces the most accurate predictions.
+# 11. Accurate predictions
+
+We test different algorithms and tweak their parameters until we find the one which produces the most accurate predictions.
+
 ![hyperparameters](/hyperparameters.png "hyperparameters")
 
 <br/>
 
 ## Bias and variance
-- Both bias and variance contribute to error (inaccuracy).
-- Bias is how accurate my prediction is.
-- Variance is how scattered my predictions are.
-- We want the model to make predictions which are accurate (low bias) and close together (low variance).
+- Bias and variance contribute to error (inaccuracy).
+- We want low bias - predictions near to the target.
+- We want low variance - predictions which are close together.
 
 ![bias-and-variance](/bias-and-variance.png "bias and variance")
 
 <br/>
 
-## Model complexity
-- When finding the perfect algorithm and parameters, there is a trade-off between optimal bias and optimal variance.
-- Initially the model is simple. Predictions are close together but inaccurate (high bias, low variance).
-- As we increase the model's complexity, predictions become more accurate and slightly more scattered (mid bias, mid variance).
-- If we make the model too complicated, test data predictions become too scattered (too high variance).
+## Balancing Bias and Variance
+- Initially the model is simple and predictions are inaccurate (high bias) but close together (low variance).
+
+![high-bias-low-variance](/high-bias-low-variance.png "high bias low variance")
+
+- Bias and variance is a trade-off and we're looking for the perfect balance between the two.
+- To increase accuracy (lower bias), we **increase the model's complexity**.
+- Predictions are now slightly more scattered (mid variance) but also increasingly more accurate (mid bias). This is the perfect balance.
+
+![mid-bias-mid-variance](/mid-bias-mid-variance.png "mid bias mid variance")
 
 ![model-complexity](/model-complexity.png "model complexity")
+
+
+If we increase the complexity too much, this results in accurate predictions using training data but not test data (overfitting).
+
+If we don't increase complexity at all, both training and test data results in inaccurate predictions (underfitting).
 
 ![model-complexity-2](/model-complexity-2.png "model complexity 2")
