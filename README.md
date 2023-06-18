@@ -160,15 +160,6 @@ If we don't increase complexity at all, both training and test data results in i
 ![model-complexity-2](/images/model-complexity-2.png "model complexity 2")
 
 
-# 12. Support Vector Machines (SVM)
-- Classification technique used to categorise outputs.
-- Similar to logistic regression but more emphasis on the line's location.
-- Both techniques use a line to separate the points but positions the line differently.
-- Logistic regression **minimises** the distance between all points and the line.
-- SVM **maximises** the distance (margin) between all points and the line.
-
-![svm-vs-logistic](/images/svm.png "svm vs logistic")
-
 </br>
 
 # 13. Neural Networks

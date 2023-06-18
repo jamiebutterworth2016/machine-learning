@@ -6,13 +6,20 @@ Both inputs and output are known.
 3. I discover the relationship between the inputs and the output.
 4. I use this relationship to predict the output of future inputs.
 
-<br/>
-
-# Supervised learning algorithms
+Supervised learning algorithms:
 
 - Linear regression
 - Logistic regression
-- k-nearest neighbours
+- k-nearest neighbours (k-NN)
+- Support vector machines (SVM)
+
+| Algorithm                     | Classification technique |
+| ----------------------------- | ------------------------ |
+| Linear regression             | ❌                        |
+| Logistic regression           | ✅                        |
+| k-nearest neighbours (k-NN)   | ✅                        |
+| Support vector machines (SVM) | ✅                        |
+
 
 </br>
 
@@ -106,3 +113,12 @@ classification algorithms like descition trees or support vector machines may be
 - Setting k to an uneven number eliminates the possibility of a stalemate.
 - 5 is the default when using Scikit-learn.
 - k-NN is not recommended for large datasets.
+
+## Support Vector Machines (SVM)
+- Classification technique used to categorise outputs.
+- Similar to logistic regression but more emphasis on the line's location.
+- Both techniques use a line to separate the points but positions the line differently.
+- Logistic regression **minimises** the distance between all points and the line.
+- SVM **maximises** the distance (margin) between all points and the line.
+
+![svm-vs-logistic](/images/svm.png "svm vs logistic")
