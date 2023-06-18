@@ -126,7 +126,7 @@ Input: Data -> Learning: Model -> Output: Action
 
 We test different algorithms and tweak their parameters until we find the one which produces the most accurate predictions.
 
-![hyperparameters](/hyperparameters.png "hyperparameters")
+![hyperparameters](/images/hyperparameters.png "hyperparameters")
 
 <br/>
 
@@ -135,26 +135,41 @@ We test different algorithms and tweak their parameters until we find the one wh
 - We want low bias - predictions near to the target.
 - We want low variance - predictions which are close together.
 
-![bias-and-variance](/bias-and-variance.png "bias and variance")
+![bias-and-variance](/images/bias-and-variance.png "bias and variance")
 
 <br/>
 
 ## Balancing Bias and Variance
 - Initially the model is simple and predictions are inaccurate (high bias) but close together (low variance).
 
-![high-bias-low-variance](/high-bias-low-variance.png "high bias low variance")
+![high-bias-low-variance](/images/high-bias-low-variance.png "high bias low variance")
 
 - Bias and variance is a trade-off and we're looking for the perfect balance between the two.
 - To increase accuracy (lower bias), we **increase the model's complexity**.
 - Predictions are now slightly more scattered (mid variance) but also increasingly more accurate (mid bias). This is the perfect balance.
 
-![mid-bias-mid-variance](/mid-bias-mid-variance.png "mid bias mid variance")
+![mid-bias-mid-variance](/images/mid-bias-mid-variance.png "mid bias mid variance")
 
-![model-complexity](/model-complexity.png "model complexity")
+![model-complexity](/images/model-complexity.png "model complexity")
 
 
 If we increase the complexity too much, this results in accurate predictions using training data but not test data (overfitting).
 
 If we don't increase complexity at all, both training and test data results in inaccurate predictions (underfitting).
 
-![model-complexity-2](/model-complexity-2.png "model complexity 2")
+![model-complexity-2](/images/model-complexity-2.png "model complexity 2")
+
+
+# 12. Support Vector Machines (SVM)
+- Classification technique used to categorise outputs.
+- Similar to logistic regression but more emphasis on the line's location.
+- Both techniques use a line to separate the points but positions the line differently.
+- Logistic regression **minimises** the distance between all points and the line.
+- SVM **maximises** the distance (margin) between all points and the line.
+
+![svm-vs-logistic](/images/svm.png "svm vs logistic")
+
+</br>
+
+# 13. Neural Networks
+- 

@@ -36,7 +36,7 @@ Both inputs and output are known.
 - The distance between the line and a value is called the *error*.
 - I can predict an output by choosing an input on the X axis, going up to the line and reading the output on the y axis.
 
-![linear regression](/linear%20regression.png "linear regression")
+![linear regression](/images/linear%20regression.png "linear regression")
 
 </br>
 
@@ -46,7 +46,7 @@ Both inputs and output are known.
 - Inputs can be categorical variables (e.g. gender) but but must be expressed numerically (0 or 1), not as strings ("male", "female").
 - Companies more likely to want to map many inputs to a predicted output.
 
-![multiple linear regression](/multiple%20linear%20regression.png "multiple linear regression")
+![multiple linear regression](/images/multiple%20linear%20regression.png "multiple linear regression")
 
 
 ## Logistic regression
@@ -72,9 +72,9 @@ e = 2.718 (Euler's constant)
 - The output is the position of the point in relation to the hyperplane, which determines the classification of the inputs.
 
 *Sigmoid function splitting points into two classes.*
-![sigmoid function](/sigmoid.png "sigmoid function")
+![sigmoid function](/images/sigmoid.png "sigmoid function")
 
-![classified](/logistic%20regression%20classified%202.png "classified")
+![classified](/images/logistic%20regression%20classified%202.png "classified")
 
 ### Multinomial logistic regression
 - For when the output can be more than two classes.
@@ -84,7 +84,7 @@ classification algorithms like descition trees or support vector machines may be
 - Inputs should not be strongly correlated with each other.
 - At least 30 points for each output to ensure high accuracy.
 
-![multinomial logistic regression](/multinomial%20logistic%20regression.png "multinomial logistic regression")
+![multinomial logistic regression](/images/multinomial%20logistic%20regression.png "multinomial logistic regression")
 
 ## k-nearest neighbours (k-NN)
 - Classification technique.
@@ -98,7 +98,7 @@ classification algorithms like descition trees or support vector machines may be
 4. I note the class of each neighbouring point.
 5. The new point belongs to the class with the most neighbouring points. E.g. 1 neighbouring point belongs to class A. 2 neighbouring points belong to class B. The new point belongs to class B.
 
-![k-nearest neighbours](/k-nearest%20neighbours.png "k-nearest neighbours")
+![k-nearest neighbours](/images/k-nearest%20neighbours.png "k-nearest neighbours")
 
 - Test different k combinations to find the best fit.
 - Setting k too low, results in misclassification.

@@ -25,7 +25,7 @@
 - Calculate the average X and y values (the mean) of the points in each cluster.
 - Take the mean value of the points in each cluster and plug in those x and Y values to update the centroid coordinates on the scatterplot.
 
-![k-means clustering](/k-means%20clustering%202.png "k-means clustering")
+![k-means clustering](/images/k-means%20clustering%202.png "k-means clustering")
 
 *Euclidian distance*
-![euclidian distance](/euclidean%20distance.png "euclidian distance")
+![euclidian distance](/images/euclidean%20distance.png "euclidian distance")
