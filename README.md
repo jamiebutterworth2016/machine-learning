@@ -1,4 +1,4 @@
-# Machine learning
+# Machine learning (ML)
 ```
 Computer science -> Data science -> AI -> Machine learning
 ```
@@ -163,4 +163,8 @@ If we don't increase complexity at all, both training and test data results in i
 </br>
 
 # 13. Neural Networks
-- 
+
+
+
+# Practical
+[Practical](practical.md)

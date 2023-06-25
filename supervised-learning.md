@@ -8,11 +8,6 @@ Both inputs and output are known.
 
 Supervised learning algorithms:
 
-- Linear regression
-- Logistic regression
-- k-nearest neighbours (k-NN)
-- Support vector machines (SVM)
-
 | Algorithm                     | Classification technique |
 | ----------------------------- | ------------------------ |
 | Linear regression             | ❌                        |
