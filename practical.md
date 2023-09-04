@@ -1,4 +1,4 @@
-# 16. Development environment
+# Development environment
   
 ## Install Jupyter Notebook in Windows
 - Install Python from [Link.](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
@@ -78,7 +78,7 @@ Index(['Suburb', 'Address', 'Rooms', 'Type', 'Price', 'Method', 'SellerG',
       dtype='object')
 ```
 
-# 17. Building a model in Python
+# Building a model in Python
 
 ## 1. Import libraries and dataset
 - Import Pandas.
