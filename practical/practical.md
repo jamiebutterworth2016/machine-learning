@@ -1,13 +1,7 @@
-# Development environment
+# Setting up the development environment
   
-## Install Jupyter Notebook in Windows
-- Install Python from [Link.](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
-  - Also installs pip for you - the package manager required to install Jupyter Notebook.
-- Open command prompt **as admin**.
-- Install Jupyter Notebook (web app): `pip install notebook`
-- Install pandas (Python library for ML): `pip install pandas`
-- Launch Notebook with `jupyter notebook`
-- This will open Notebook in a browser, address `http://localhost:8888/tree?token=569606a2396416d72985548e78f5138e84b655ccfd379fdd`
+## Install Jupyter Notebook
+[Install Jupyter Notebook](install-jupyter-notebook.md)
 
 ## Create a new notebook
 - Click `New` and `Notebook` to create a notebook project.
@@ -17,7 +11,7 @@
 
 ![new notebook](/images/practical/new-notebook.PNG "new notebook")
 
-## Read a dataset
+## Reading a dataset
 - Download the dataset from [kaggle.com](https://www.kaggle.com/anthonypino/melbourne-housing-market/) and extract the files.
 - Add these three cells:
 ```
@@ -30,7 +24,7 @@ df.head(10)
 
 - Run the cells with `Run > Run All Cells` to load the dataset and view the first 10 rows.
 
-## Find a specific row
+## Finding a specific row
 - In ML, we often need to find a specific row.
 - E.g. if the model finds that row 101 is the most suitable house to recommend to a buyer, we need to see that house.
 - We're finding by index. The data is zero-indexed. Row 101 = index 100.
@@ -44,22 +38,7 @@ Address                        180 Parer Rd
 Rooms                                     3
 Type                                      h
 Price                              830000.0
-Method                                    S
-SellerG                               Barry
-Date                             16/04/2016
-Distance                               13.5
-Postcode                             3042.0
-Bedroom2                                3.0
-Bathroom                                1.0
-Car                                     2.0
-Landsize                              971.0
-BuildingArea                          113.0
-YearBuilt                            1960.0
-CouncilArea      Moonee Valley City Council
-Lattitude                          -37.7186
-Longtitude                          144.876
-Regionname             Western Metropolitan
-Propertycount                        3464.0
+...
 Name: 100, dtype: object
 ```
 

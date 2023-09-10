@@ -4,11 +4,11 @@
 - Networks require a lot of data, processing and their decisions are untraceable (black-box dilemma).
 - Trees require less data, processing and their decisions are traceable so easier to explain.
 
-## Class and regression trees
+## Class trees and regression trees
 - There are two types of trees:
   - Class trees
   - Regression trees
-- Both trees take numeric and categoric inputs.
+- Both trees receive numeric and categoric inputs.
 - Class trees predict categoric outputs.
 - Regression trees predict numeric outputs.
 

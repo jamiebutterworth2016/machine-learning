@@ -18,7 +18,7 @@ Supervised learning algorithms:
 
 </br>
 
-## Linear regression
+## 1. Linear regression
 
 | Season (Input / X) | Viewers (Output / y) |
 | ------------------ | -------------------- |
@@ -32,10 +32,12 @@ Supervised learning algorithms:
 | 8                  | 32                   |
 | 9                  | 38                   |
 
-- The graph is a *scatterplot*. The line is a *hyperplane* used to make numeric predictions.
+<br/>
+
+- The graph is a *scatterplot*. The line is a *hyperplane* we use to make numeric predictions.
 - I can find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
 - The nearer the value is to the line (vertically), the more accurate the model's predictions are.
-- The distance between the line and a value is called the *error*.
+- The distance between the line and a value is the *error*.
 - I can predict an output by choosing an input on the X axis, going up to the line and reading the output on the y axis.
 
 ![linear regression](/images/linear%20regression.png "linear regression")
@@ -50,8 +52,9 @@ Supervised learning algorithms:
 
 ![multiple linear regression](/images/multiple%20linear%20regression.png "multiple linear regression")
 
+<br/>
 
-## Logistic regression
+## 2. Logistic regression
 - Classification technique.
 - The logistic hyperplane is a classification boundary which splits data into two classes.
 - Uses the sigmoid function to find the probability of inputs producing classified outputs.
@@ -74,6 +77,7 @@ e = 2.718 (Euler's constant)
 - The output is the position of the point in relation to the hyperplane, which determines the classification of the inputs.
 
 *Sigmoid function splitting points into two classes.*
+
 ![sigmoid function](/images/sigmoid.png "sigmoid function")
 
 ![classified](/images/logistic%20regression%20classified%202.png "classified")
@@ -88,7 +92,9 @@ classification algorithms like descition trees or support vector machines may be
 
 ![multinomial logistic regression](/images/multinomial%20logistic%20regression.png "multinomial logistic regression")
 
-## k-nearest neighbours (k-NN)
+<br/>
+
+## 3. k-nearest neighbours (k-NN)
 - Classification technique.
 - Classifies new points relative to how near they are to existing points.
 - k is the number of existing points we use to determine which class a new point belongs to.
@@ -109,7 +115,9 @@ classification algorithms like descition trees or support vector machines may be
 - 5 is the default when using Scikit-learn.
 - k-NN is not recommended for large datasets.
 
-## Support Vector Machines (SVM)
+<br/>
+
+## 4. Support Vector Machines (SVM)
 - Classification technique used to categorise outputs.
 - Similar to logistic regression but more emphasis on the line's location.
 - Both techniques use a line to separate the points but positions the line differently.
