@@ -75,39 +75,9 @@ df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
 ```
 
 ## 2. Scrub dataset
-Scrubbing is the process of refining the dataset.\
-Fix spelling mistakes and simple errors in the CSV source file before importing the dataset.\
-Perform major structural changes in the development environment.
+[Scrub the dataset.](data-scrubbing.md)
 
-### 2a. Remove unwanted columns
-```
-del df['Address']
-del df['Method']
-del df['SellerG']
-del df['Date']
-del df['Postcode']
-del df['Lattitude']
-del df['Longtitude']
-del df['Regionname']
-del df['Propertycount']
-```
-
-### 2b. Remove missing values
-There are a number of methods to manage missing values.
-- Populate empty cells with the dataset's mean value.
-- Median value.
-- Delete the rows with missing values entirely.
-```
-df.dropna(axis = 0, how = 'any', thresh = None, subset = None, inplace = True)
-```
-![dropna parameters](/images/practical/dropna-parameters.PNG "dropna parameters")
-
-### 2c. Convert text to number columns (one-hot encoding)
-```
-df = pd.get_dummies(df, columns = ['Suburb', 'CouncilArea', 'Type'])
-```
-
-### 2d. Assign dependent and independent variables to columns
+## Assign dependent and independent variables to columns
 ```
 X = df.drop('Price',axis=1)
 y = df['Price']
