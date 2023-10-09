@@ -1,15 +1,7 @@
 # Setting up the development environment
   
-## Install Jupyter Notebook
-[Install Jupyter Notebook](install-jupyter-notebook.md)
-
-## Create a new notebook
-- Click `New` and `Notebook` to create a notebook project.
-- Select `Python 3` as the kernel.
-- Each line is a cell.
-- To run all cells, go to `Run > Run All Cells`.
-
-![new notebook](/images/practical/new-notebook.PNG "new notebook")
+## Create Jupyter Notebook project
+[Create Jupyter Notebook project](create-jupyter-notebook-project.md)
 
 ## Reading a dataset
 - Download the dataset from [kaggle.com](https://www.kaggle.com/anthonypino/melbourne-housing-market/) and extract the files.
