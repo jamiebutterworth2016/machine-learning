@@ -115,7 +115,6 @@ plt.ylabel('Second Principal Component')
 ## k-means clustering
 Use k-means clustering to split data into natural groupings.
 
-
 ### Import libraries
 ```
 import numpy as np
@@ -128,6 +127,7 @@ import matplotlib.pyplot as plt
 ### Create blobs
 Generate a dataset instead of importing.\
 300 samples, 2 features, 4 centers (groups) with a cluster deviation of 4.\
+*What is the different between a center and cluster deviation?*\
 Plot the data to check what it looks like so far.
 ```
 X, y = make_blobs(n_samples=300, n_features=2, centers=4, cluster_std=4, random_state=10)
@@ -137,14 +137,14 @@ plt.scatter(X[:,0],X[:,1])
 ![blob plot](/images/practical/blob-plot.png)
 
 ### Set algorithm
-Use k-means clustering to find 4 groups of points, each sharing similar attributes.\
+Use k-means clustering to find 4 groups of points, each sharing similar attributes.
 ```
 model = KMeans(n_clusters=4)
 model.fit(X)
 ```
 
 ### Create groups
-Generate and print the four centroid coordinates.\
+Generate and print the 4 centroid coordinates.\
 [x y]
 ```
 model_predict = model.predict(X)
@@ -164,6 +164,8 @@ plt.scatter(centroids[:,0], centroids[:,1], c='black', s=200, alpha=1)
 ![cluster plot](/images/practical/cluster-plot.png)
 
 ### Scree plot
+Use a scree plot to find the appropriate number of clusters.\
+*Does this need to happen before we specify the number of clusters?*\
 Visualises the degree of scattering (variance) by comparing the distortion for each variation of clusters.\
 Distortion is the distance between the centroid and other points in the cluster.\
 To determine the optimal number of clusters, we select the value of k where distortion subsides to the left of the plot before it reaches a point of negligible change with the cluster variations to the right.\
@@ -178,8 +180,8 @@ distortions = []
 
 K = range(1,10)
 
-for k in K
-    model = KMeans(n_clusters=K)
+for k in K:
+    model = KMeans(n_clusters=k)
     model.fit(X,y)
     distortions.append(model.inertia_)
 
