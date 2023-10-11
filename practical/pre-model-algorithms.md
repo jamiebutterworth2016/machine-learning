@@ -24,7 +24,7 @@ The X axis should hold the feature with the most varied data points.
 
 Each point of this feature has a different value. The points are varied so this component is the perfect candidate for the X axis.
 
-![x-axis](/images/practical/x-axis.PNG)
+![x axis](/images/practical/x-axis.PNG)
 
 The y axis is perpdendicular to the X axis.
 
@@ -126,17 +126,15 @@ import matplotlib.pyplot as plt
 ```
 
 ### Create blobs
-Generate a dataset instead of importing.
-300 samples, 2 features, 4 centers (groups) with a cluster deviation of 4.
+Generate a dataset instead of importing.\
+300 samples, 2 features, 4 centers (groups) with a cluster deviation of 4.\
+Plot the data to check what it looks like so far.
 ```
 X, y = make_blobs(n_samples=300, n_features=2, centers=4, cluster_std=4, random_state=10)
-```
-
-### Plot data
-```
 plt.figure(figsize=(7,5))
 plt.scatter(X[:,0],X[:,1])
 ```
+![blob plot](/images/practical/blob-plot.png)
 
 ### Set algorithm
 Use k-means clustering to find 4 groups of points, each sharing similar attributes.\
@@ -163,6 +161,31 @@ plt.scatter(X[:,0], X[:,1], c=model_predict, s=50, cmap='rainbow')
 plt.scatter(centroids[:,0], centroids[:,1], c='black', s=200, alpha=1)
 ```
 
-![cluster-plot](/images/practical/cluster-plot.png)
+![cluster plot](/images/practical/cluster-plot.png)
 
-## Scree plot
+### Scree plot
+Visualises the degree of scattering (variance) by comparing the distortion for each variation of clusters.\
+Distortion is the distance between the centroid and other points in the cluster.\
+To determine the optimal number of clusters, we select the value of k where distortion subsides to the left of the plot before it reaches a point of negligible change with the cluster variations to the right.\
+From the optimal point (elbow point), distortion starts decreasingly linearly to the right.\
+The optimal number is 4.\
+This is the same number of centers used to generate the dataset.
+
+![scree plot](/images/practical/scree-plot.png)
+
+```
+distortions = []
+
+K = range(1,10)
+
+for k in K
+    model = KMeans(n_clusters=K)
+    model.fit(X,y)
+    distortions.append(model.inertia_)
+
+plt.figure(figsize=(16,8))
+plt.plot(K, distortions)
+plt.xlabel('k')
+plt.ylabel('Distortion')
+plt.show()
+```
