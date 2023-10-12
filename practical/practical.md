@@ -2,40 +2,34 @@
   
 ## Create Jupyter Notebook project
 [Create Jupyter Notebook project](create-jupyter-notebook-project.md)
-
 [Helpful commands](helpful-commands.md)
 
-# Building a model in Python
 
-## Model design
-1. Import libraries - [Incomplete list of libraries](libraries.md)
-2. Import dataset
+# Model design
+1. [Import libraries](import-libraries.md)
+2. [Import dataset](import-dataset.md)
 3. [Exploratory data analysis](exploratory-data-analysis.md)
 4. [Data scrubbing](data-scrubbing.md)
-5. [Pre-model algorithm](pre-model-algorithms.md)
+5. [Pre-model algorithm](pre-model-algorithms.md) (optional)
 6. [Split validation](split-validation.md)
-7. Set algorithm
+7. [Set algorithm](algorithms.md)
 8. Predict
-9. Evaluate
+9. [Evaluate](evaluate.md)
 10. Optimise
 
-## 1. Import libraries and dataset
-- Import Pandas.
-- Import functions from Scikit-learn.
-  - Gradient boosting (ensemble).
-  - Absolute error to evaluate performance.
-- Load the dataset into the dataframe.
-```
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn import ensemble
-from sklearn.metrics import mean_absolute_error
 
-df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
-```
+## Optimise
+For a clustering analysis technique, this could mean going back and modifying the number of clusters.\
+For a tree-based learning technique, this could mean tweaking the parameters.\
+Can be performed manually with trial error.\
+Or automatically using a method like grid search.
 
-## 2. Scrub dataset
-[Scrub the dataset.](data-scrubbing.md)
+
+
+
+
+
+
 
 ## Assign dependent and independent variables to columns
 ```
@@ -43,8 +37,6 @@ X = df.drop('Price',axis=1)
 y = df['Price']
 ```
 
-## 3. Split dataset
-[Split validation](split-validation.md)
 
 ## 4. Create model with algorithm and parameters
 The algorithm is ensemble's gradient boosting regressor.

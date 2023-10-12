@@ -2,6 +2,9 @@
 A list of the most popular Python libraries used for ML.
 
 ## Pandas
+```
+import pandas as pd
+```
 - Manage and present a mix of data types - numeric and non-numeric data.
 - Pandas = panel data.
 - Creates a series of panels similar to Excel sheets.
@@ -14,6 +17,9 @@ A list of the most popular Python libraries used for ML.
 ![pandas](/images/practical/pandas.PNG)
 
 ## NumPy
+```
+import numpy as np
+```
 - Used with Pandas.
 - NumPy = numeric Python.
 - Manage multi-dimensional arrays and matrices.
@@ -21,6 +27,16 @@ A list of the most popular Python libraries used for ML.
 - Offers math functions - min, max, mean, standard deviation, variance.
 
 ## Scikit-learn
+`pip install scikit-learn`
+```
+from sklearn.model_selection import train_test_split
+from sklearn import ensemble
+from sklearn.metrics import mean_absolute_error
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.datasets import make_blobs
+from sklearn.cluster import KMeans
+```
 - Shallow learning algorithms
   - Logistic regression
   - Decision trees
@@ -36,10 +52,18 @@ A list of the most popular Python libraries used for ML.
 ![scikit](/images/practical/scikit.PNG)
 
 ## Matplotlib
+```
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
 - Visualisation of variables.
 - Generate scatterplots, histograms, pie charts, bar charts, error charts.
 
 ## Seaborn
+`pip install seaborn`
+```
+import seaborn as sns
+```
 - Visualisation of variables.
 - Better looking than Matplotlib.
 - Generate heatmaps, cluster maps, pairplots.

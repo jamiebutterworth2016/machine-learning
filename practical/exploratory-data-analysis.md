@@ -2,9 +2,10 @@
 - Manage data as a Pandas dataframe.
 - Common EDA techniques.
 - Summarise the important characteristics of the dataset to preare for further processing and analysis.
+- Become familiar with the data, e.g. distribution and the state of missing values.
 
 ## Requirements
-- [Install Jupyter Notebook](install-jupyter-notebook.md)
+- [Create new project](create-jupyter-notebook-project.md)
 - Get the dataset.
   - [Download Airbnb dataset from Kaggle.](https://www.kaggle.com/datasets/lennarthaupts/airbnb-berlin-july-2021)
   - Unzip and move `listings_berlin.csv` to `Downloads` folder.
