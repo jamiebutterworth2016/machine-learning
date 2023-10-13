@@ -1,7 +1,20 @@
 # Evaluate
 
-Evaluate the results.
-Depends on your model type: classification model or regression model.
+Evaluate the results.\
+The evaluation method depends on your model type: regression model or classification model.
+
+## Regression model
+Two common measures:
+- Mean absolute error (MAE)
+- Root mean square error (RMSE)
+
+### Mean absolute error
+Measure the average of the errors in a set of predictions.\
+I.e. how far the regression line is to the points.
+
+### Root mean square error
+Measures the standard deviation of prediction errors.\
+Informs how spread out the prediction errors are in relation to an optimal fit.
 
 ## Classification model
 Common evaluation methods:
@@ -64,16 +77,3 @@ Used as metric for model-to-model comparison instead of standalone model accurac
 #### Support
 Not an evaluation metric.
 A tally of the number of positive and negative cases respectively.
-
-## Regression model
-Two common measures:
-- Mean absolute error (MAE)
-- Root mean square error (RMSE)
-
-### Mean absolute error
-Measure the average of the errors in a set of predictions.\
-I.e. how far the regression line is to the points.
-
-### Root mean square error
-Measures the standard deviation of prediction errors.\
-Informs how spread out the prediction errors are in relation to an optimal fit.

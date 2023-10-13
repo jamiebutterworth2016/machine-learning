@@ -36,6 +36,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans
+from sklearn.linear_model import LinearRegression
+from sklearn import metrics
 ```
 - Shallow learning algorithms
   - Logistic regression
