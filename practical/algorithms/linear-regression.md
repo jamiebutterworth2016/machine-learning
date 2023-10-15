@@ -31,7 +31,7 @@ The dataset is at `/practical/datasets/Melbourne_housing_FULL.csv`
 df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
 ```
 
-## Data scrubbing and Exploratory data analysis
+## Data scrubbing and analysis
 Keep a small number of numeric variables which explain a large proportion of variance.\
 Remove the remaining non numeric variables.
 ```
