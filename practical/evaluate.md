@@ -32,8 +32,7 @@ Warning: normally reliable but can hide a lopsided number of false-positives or 
 This isn't an issue if the number of both is balanced.
 
 ### Confusion matrix
-Also known as error matrix.\
-Simple table which summarises the model's performance.\
+Summarises the model's performance.\
 
 Top left - 134 points were predicted correctly as 0.\
 Bottom right - 125 points were predicted corrently as 1.\
