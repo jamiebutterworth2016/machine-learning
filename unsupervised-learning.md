@@ -1,4 +1,7 @@
 # Unsupervised learning
+- Use to discover patterns in data.
+- The algorithm classifies the data but doesn't label the class.
+- We label the class.
 - Inputs are labelled (known).
 - Outputs are unlabelled (unknown).
 - A set of inputs.
