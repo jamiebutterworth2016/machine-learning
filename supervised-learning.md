@@ -21,7 +21,6 @@ Both inputs and output are known.
 | k-nearest neighbours (k-NN)   | Classification           |
 | Support vector machines (SVM) | Classification           |
 
-
 </br>
 
 ## 1. Linear regression
@@ -30,12 +29,7 @@ Both inputs and output are known.
 | ------------------ | -------------------- |
 | 1                  | 19                   |
 | 2                  | 18                   |
-| 3                  | 17                   |
-| 4                  | 20                   |
-| 5                  | 29                   |
-| 6                  | 31                   |
-| 7                  | 33                   |
-| 8                  | 32                   |
+| ...                | ...                  |
 | 9                  | 38                   |
 
 <br/>
