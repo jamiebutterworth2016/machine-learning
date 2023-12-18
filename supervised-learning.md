@@ -62,7 +62,7 @@ Both inputs and output are known.
 
 ## 2. Logistic regression
 - Classification technique.
-- The logistic hyperplane is a classification boundary which splits data into two classes.
+- The logistic hyperplane is a classification boundary which **splits data into two classes**.
 - Uses the sigmoid function to find the probability of inputs producing classified outputs.
 
 ```
