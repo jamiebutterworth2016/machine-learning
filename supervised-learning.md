@@ -34,7 +34,7 @@ Supervised learning algorithms:
 
 <br/>
 
-- The graph is a *scatterplot*. The line is a *hyperplane* we use to make numeric predictions.
+- The graph is a *scatterplot*. The line is a *hyperplane* we use to make **numeric predictions**.
 - I can find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
 - The nearer the value is to the line (vertically), the more accurate the model's predictions are.
 - The distance between the line and a value is the *error*.
@@ -78,7 +78,7 @@ e = 2.718 (Euler's constant)
 
 *Sigmoid function splitting points into two classes.*
 
-![sigmoid function](/images/sigmoid.png "sigmoid function")
+![sigmoid function](/images/sigmoid.PNG "sigmoid function")
 
 ![classified](/images/logistic%20regression%20classified%202.png "classified")
 
@@ -90,7 +90,7 @@ classification algorithms like descition trees or support vector machines may be
 - Inputs should not be strongly correlated with each other.
 - At least 30 points for each output to ensure high accuracy.
 
-![multinomial logistic regression](/images/multinomial%20logistic%20regression.png "multinomial logistic regression")
+![multinomial logistic regression](/images/multinomial%20logistic%20regression.PNG "multinomial logistic regression")
 
 <br/>
 
@@ -124,4 +124,4 @@ classification algorithms like descition trees or support vector machines may be
 - Logistic regression **minimises** the distance between all points and the line.
 - SVM **maximises** the distance (margin) between all points and the line.
 
-![svm-vs-logistic](/images/svm.png "svm vs logistic")
+![svm-vs-logistic](/images/svm.PNG "svm vs logistic")
