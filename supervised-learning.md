@@ -7,14 +7,12 @@ Both inputs and output are known.
 3. I discover the relationship between the inputs and the output.
 4. I use this relationship to predict the output of future inputs.
 
-Supervised learning algorithms:
-
-| Algorithm                     | Classification technique |
+| Algorithm                     |                          |
 | ----------------------------- | ------------------------ |
-| Linear regression             | ❌                        |
-| Logistic regression           | ✅                        |
-| k-nearest neighbours (k-NN)   | ✅                        |
-| Support vector machines (SVM) | ✅                        |
+| Linear regression             | Numeric prediction       |
+| Logistic regression           | Classification           |
+| k-nearest neighbours (k-NN)   | Classification           |
+| Support vector machines (SVM) | Classification           |
 
 
 </br>
