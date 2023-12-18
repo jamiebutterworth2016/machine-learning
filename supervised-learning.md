@@ -1,6 +1,6 @@
 # Supervised learning
 Supports both numeric predictions and classification.\
-Classification appears to be the most useful.\
+Classification appears to be the most useful.
 
 ## Semi-supervised learning
 Tables usually don't have a classification column.\
