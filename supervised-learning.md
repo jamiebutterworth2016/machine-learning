@@ -14,7 +14,7 @@ Both inputs and output are known.
 3. I discover the relationship between the inputs and the output.
 4. I use this relationship to predict the output of future inputs.
 
-| Algorithm                     |                          |
+| Algorithm                     | Used for                 |
 | ----------------------------- | ------------------------ |
 | Linear regression             | Numeric prediction       |
 | Logistic regression           | Classification           |
