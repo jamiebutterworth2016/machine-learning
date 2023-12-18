@@ -45,6 +45,7 @@ Both inputs and output are known.
 - The nearer the value is to the line (vertically), the more accurate the model's predictions are.
 - The distance between the line and a value is the *error*.
 - I can predict an output by choosing an input on the X axis, going up to the line and reading the output on the y axis.
+- _It is difficult to use linear regression on tables with too few numeric columns._
 
 ![linear regression](/images/linear%20regression.png "linear regression")
 
