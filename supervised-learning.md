@@ -50,7 +50,7 @@ Supervised learning algorithms:
 - Inputs can be categorical variables (e.g. gender) but but must be expressed numerically (0 or 1), not as strings ("male", "female").
 - Companies more likely to want to map many inputs to a predicted output.
 
-![multiple linear regression](/images/multiple%20linear%20regression.png "multiple linear regression")
+![multiple linear regression](/images/multiple%20linear%20regression.PNG "multiple linear regression")
 
 <br/>
 
@@ -106,7 +106,7 @@ classification algorithms like descition trees or support vector machines may be
 4. I note the class of each neighbouring point.
 5. The new point belongs to the class with the most neighbouring points. E.g. 1 neighbouring point belongs to class A. 2 neighbouring points belong to class B. The new point belongs to class B.
 
-![k-nearest neighbours](/images/k-nearest%20neighbours.png "k-nearest neighbours")
+![k-nearest neighbours](/images/k-nearest%20neighbours.PNG "k-nearest neighbours")
 
 - Test different k combinations to find the best fit.
 - Setting k too low, results in misclassification.
