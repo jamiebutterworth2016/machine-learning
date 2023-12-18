@@ -1,6 +1,5 @@
 # Supervised learning
-
-Supports both numeric outputs and classification.\\
+Supports both numeric outputs and classification.\
 Both inputs and output are known.
 
 1. I take the output.
