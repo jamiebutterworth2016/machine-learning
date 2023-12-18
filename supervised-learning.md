@@ -20,6 +20,8 @@ Both inputs and output are known.
 | Logistic regression           | Classification           |
 | k-nearest neighbours (k-NN)   | Classification           |
 | Support vector machines (SVM) | Classification           |
+| Decision trees                |                          |
+| Neural networks               |                          |
 
 </br>
 
