@@ -91,7 +91,7 @@ e = 2.718 (Euler's constant)
 
 ### Multinomial logistic regression
 - For when the output can be more than two classes.
-- Logistic regression's strength is binary classification. Decision trees or support vector machines may be a better techniques for multiclassification.
+- Logistic regression's strength is binary classification. Decision trees or support vector machines may be better algorithms for multiclassification.
 - Inputs should not have missing values.
 - Inputs should not be strongly correlated with each other.
 - There should be at least 30 inputs for each output to ensure high accuracy. _To confirm._
@@ -115,8 +115,8 @@ e = 2.718 (Euler's constant)
 ![k-nearest neighbours](/images/k-nearest%20neighbours.PNG "k-nearest neighbours")
 
 - Test different k combinations to find the best fit.
-- Setting k too low, results in misclassification.
-- Setting k is too high is computationally expensive. Calculating the distance between a new point and all existing points is expensive.
+- Setting k too low results in misclassification.
+- Setting k is too high is computationally expensive - calculating the distance between a new point and all existing points is expensive.
 - Setting k to an uneven number eliminates the possibility of a stalemate.
 - 5 is the default when using Scikit-learn.
 - k-NN is not recommended for large datasets.
@@ -124,9 +124,8 @@ e = 2.718 (Euler's constant)
 <br/>
 
 ## 4. Support Vector Machines (SVM)
-- Classification technique used to categorise outputs.
-- Similar to logistic regression but more emphasis on the line's location.
-- Both techniques use a line to separate the points but positions the line differently.
+- Classification technique.
+- Similar to logistic regression - both techniques use a line to separate the points but positions the line differently.
 - Logistic regression **minimises** the distance between all points and the line.
 - SVM **maximises** the distance (margin) between all points and the line.
 
