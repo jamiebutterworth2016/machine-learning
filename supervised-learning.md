@@ -1,5 +1,9 @@
 # Supervised learning
 Supports both numeric predictions and classification.\
+Classification appears to be the most useful.\
+Tables usually don't have a classification column.\
+Therefore, use unsupervised learning to generate a classification column.\
+
 Both inputs and output are known.
 
 1. I take the output.
