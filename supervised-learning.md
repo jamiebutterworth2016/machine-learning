@@ -1,11 +1,11 @@
-# Supervised learning
-Supports both numeric predictions and classification.\
-Classification appears to be the most useful.
-
-## Semi-supervised learning
+# Semi-supervised learning
 Tables don't usually start with a classification column.\
 Use unsupervised learning first to generate a classification column.\
 Then use supervised learning to then make predictions.
+
+# Supervised learning
+Supports both numeric predictions and classification.\
+Classification appears to be the most useful.
 
 Both inputs and output are known.
 
