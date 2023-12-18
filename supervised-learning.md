@@ -91,11 +91,10 @@ e = 2.718 (Euler's constant)
 
 ### Multinomial logistic regression
 - For when the output can be more than two classes.
-- Logistic regression's strength is binary prediction, other  
-classification algorithms like descition trees or support vector machines may be a better option for solving multiclassification.
-- Data should be free of missing values.
+- Logistic regression's strength is binary classification. Decision trees or support vector machines may be a better techniques for multiclassification.
+- Inputs should not have missing values.
 - Inputs should not be strongly correlated with each other.
-- At least 30 points for each output to ensure high accuracy.
+- There should be at least 30 inputs for each output to ensure high accuracy. _To confirm._
 
 ![multinomial logistic regression](/images/multinomial%20logistic%20regression.PNG "multinomial logistic regression")
 
