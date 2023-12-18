@@ -30,5 +30,5 @@
 
 ![k-means clustering](/images/k-means%20clustering%202.PNG "k-means clustering")
 
-*Euclidian distance*
+*Euclidian distance*\
 ![euclidian distance](/images/euclidean%20distance.PNG "euclidian distance")
