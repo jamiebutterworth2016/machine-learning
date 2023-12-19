@@ -115,6 +115,26 @@ plt.ylabel('Second Principal Component')
 ## k-means clustering
 Use k-means clustering to split data into groups.
 
+```
+import pandas as pd
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('C:/Users/jamie/OneDrive/Documents/csv exports/active-trainers2.csv')
+x_values = df['email']
+y_values = df['number_of_activities']
+
+plt.figure(figsize=(10, 6))
+plt.scatter(x_values, y_values, color='blue', alpha=0.5)
+plt.title('Trainer Activities')
+plt.xlabel('Trainer')
+plt.ylabel('Number of Activities')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.show()
+```
+
 ### Import libraries
 ```
 import numpy as np
