@@ -7,12 +7,11 @@ Remove personal identifiers which break privacy regulations.\
 Data scrubbing does not affect the source file of the dataset.
 
 ## 1. Remove unwanted columns
-Remove columns which aren't compatible with a chosen algorithm or are less relevant to the target output.\
+Remove columns which aren't compatible with the chosen algorithm or are less relevant to the target output.\
 Remove duplicate columns, e.g. country and country code.\
 Remove columns from the dataframe with the `del` function.
 ```
-del df['latitude']
-del df['longitude']
+del df['column_name']
 ```
 
 ## 2. One-hot encoding
