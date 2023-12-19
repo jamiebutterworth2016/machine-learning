@@ -1,19 +1,18 @@
 # Setting up the development environment
 [Create Jupyter Notebook project](create-jupyter-notebook-project.md)\
 [Helpful commands](helpful-commands.md)
-
+[Helpful libraries](import-libraries.md)
 
 # Model design flow
-1. [Import libraries](import-libraries.md)
-2. [Import dataset](import-dataset.md)
-3. [Exploratory data analysis](exploratory-data-analysis.md) (optional)
-4. [Data scrubbing](data-scrubbing.md)
-5. [Pre-model algorithm - unsupervised learning](pre-model-algorithms.md) (optional)
-6. [Split validation](split-validation.md)
-7. [Set algorithm - supervised learning](algorithms.md)
-8. Predict
-9. [Evaluate](evaluate.md)
-10. Optimise
+1. [Import dataset](import-dataset.md)
+2. [Exploratory data analysis](exploratory-data-analysis.md) (optional)
+3. [Data scrubbing](data-scrubbing.md)
+4. [Pre-model algorithm - unsupervised learning](pre-model-algorithms.md) (optional)
+5. [Split validation](split-validation.md)
+6. [Set algorithm - supervised learning](algorithms.md)
+7. Predict
+8. [Evaluate](evaluate.md)
+9. Optimise
 
 
 ## Optimise
