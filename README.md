@@ -5,8 +5,11 @@ It finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
 Tables don't usually start with a classification column.\
-First use unsupervised learning to split data into groups and generate a classification column.\
-Then use supervised learning to make predictions.
+First use unsupervised learning to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
+Then use a supervised learning model to - Read the column values of a data row.
+- Compare the row with rows in the groups.
+- Place the row into the group with the most similar values.
+- E.g. Is this animal more like a dog or a cat? It's more like a cat so place it in the cat group.
 
 ## The three self-learning categories
 |                       | Known Input | Known Output |                                                                                                                                                                                                                                    |
