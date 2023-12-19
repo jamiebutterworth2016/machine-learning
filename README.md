@@ -1,8 +1,5 @@
 # Machine learning (ML)
-ML falls under the AI umbrella.
-```
-Computer science -> Data science -> AI -> Machine learning
-```
+ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
 Uses data instead of explicit programming. We have all this data. Let's make use of it!\
 A model (explained later) uses experience to find patterns in data.\
