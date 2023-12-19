@@ -5,7 +5,7 @@
 
 # Model design flow
 1. [Import dataset](import-dataset.md)
-2. [Exploratory data analysis](exploratory-data-analysis.md) (optional)
+2. [Exploratory data analysis - visualisation](exploratory-data-analysis.md) (optional)
 3. [Data scrubbing](data-scrubbing.md)
 4. [Pre-model algorithm - unsupervised learning](pre-model-algorithms.md) (optional)
 5. [Split validation](split-validation.md)
