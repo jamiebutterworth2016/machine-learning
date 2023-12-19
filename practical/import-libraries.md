@@ -2,6 +2,7 @@
 A list of the most popular Python libraries used for ML.
 
 ## Pandas
+In command prompt: `pip install pandas`
 ```
 import pandas as pd
 ```
