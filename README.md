@@ -7,7 +7,7 @@ Data can be broken into inputs and outputs.\
 The model analyses both input and outputs.
 
 ## Semi-supervised learning
-Tables don't usually start with a classification column.\
+Tables usually don't start with a classification column.\
 First use unsupervised learning to split data into groups and generate a classification column.\
 Then use supervised learning to then make predictions.
 
