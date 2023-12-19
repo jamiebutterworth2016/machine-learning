@@ -10,7 +10,7 @@
 - Get the dataset.
   - [Download Airbnb dataset from Kaggle.](https://www.kaggle.com/datasets/lennarthaupts/airbnb-berlin-july-2021)
   - Unzip and move `listings_berlin.csv` to `Downloads` folder.
-- Install seaborn (Python module).
+- Install Seaborn.
   - Open command prompt as admin.
   - Run `pip install seaborn`
 
