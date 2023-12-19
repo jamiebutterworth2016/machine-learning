@@ -1,6 +1,4 @@
 # Setting up the development environment
-  
-## Create Jupyter Notebook project
 [Create Jupyter Notebook project](create-jupyter-notebook-project.md)\
 [Helpful commands](helpful-commands.md)
 
