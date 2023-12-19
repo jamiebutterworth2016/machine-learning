@@ -10,7 +10,7 @@
 2. [Import dataset](import-dataset.md)
 3. [Exploratory data analysis](exploratory-data-analysis.md)
 4. [Data scrubbing](data-scrubbing.md)
-5. [Pre-model algorithm (unsupervised learning)](pre-model-algorithms.md) (optional)
+5. [Pre-model algorithm - unsupervised learning](pre-model-algorithms.md) (optional)
 6. [Split validation](split-validation.md)
 7. [Set algorithm](algorithms.md)
 8. Predict
