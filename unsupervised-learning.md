@@ -1,9 +1,6 @@
 # Unsupervised learning
-- Use to discover patterns in data.
-- The algorithm classifies the data but doesn't label the class.
-- We label the class.
-- Inputs are labelled (known).
-- Outputs are unlabelled (unknown).
+- Use to split data into groups.
+- The model does not name the outputted group. We name the group.
 - A set of inputs.
 - I find patterns between inputs.
 - I categorise inputs.
