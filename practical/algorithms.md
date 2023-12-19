@@ -1,4 +1,4 @@
-# Set algorithm
+# Set algorithm - supervised learning
 
 ![algorithm table](/images/practical/algorithm-table.png)
 
