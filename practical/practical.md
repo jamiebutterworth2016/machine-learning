@@ -1,6 +1,6 @@
 # Setting up the development environment
 [Create Jupyter Notebook project](create-jupyter-notebook-project.md)\
-[Helpful commands](helpful-commands.md)
+[Helpful commands](helpful-commands.md)\
 [Helpful libraries](import-libraries.md)
 
 # Model design flow
