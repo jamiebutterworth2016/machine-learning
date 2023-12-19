@@ -3,6 +3,7 @@ A list of the most popular Python libraries used for ML.
 
 ## Pandas
 In command prompt: `pip install pandas`
+This command also installs library NumPy.
 ```
 import pandas as pd
 ```
