@@ -16,7 +16,7 @@
 
 ## Steps
 - Import Pandas, Seaborn and Matplotlib inline.
-- Matplotlib inline is used to display a plot directly below a cell.
+- Matplotlib inline is used to display a plot directly below a cell in Jupyter Notebook.
 ```
 import pandas as pd
 import seaborn as sns
