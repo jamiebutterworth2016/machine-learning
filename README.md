@@ -1,17 +1,17 @@
 # Machine learning (ML)
-- ML falls under the AI umbrella.
+ML falls under the AI umbrella.
 ```
 Computer science -> Data science -> AI -> Machine learning
 ```
-- ML is self-learning - not explicitly programmed.
-- Uses data instead of explicit programming. We have all this data. Let's make use of it!
-- A model (explained later) uses experience to find patterns in data.
-- Data can be broken into inputs and outputs.
-- The model analyses both input and outputs.
+ML is self-learning - not explicitly programmed.\
+Uses data instead of explicit programming. We have all this data. Let's make use of it!\
+A model (explained later) uses experience to find patterns in data.\
+Data can be broken into inputs and outputs.\
+The model analyses both input and outputs.
 
 ## Semi-supervised learning
 Tables don't usually start with a classification column.\
-Use unsupervised learning first to split data into groups and generate a classification column.\
+First use unsupervised learning to split data into groups and generate a classification column.\
 Then use supervised learning to then make predictions.
 
 ## The three self-learning categories
