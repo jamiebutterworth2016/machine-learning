@@ -1,9 +1,6 @@
 # Unsupervised learning
-- Use to split data into groups.
-- The model does not name the outputted group. We name the group.
-- A set of inputs.
-- I find patterns between inputs.
-- I categorise inputs.
+- Use to split data into groups based on their values.
+- The model does not name the outputted group (unlabelled). We name the group.
 
 | Issue date (Input) | Mileage (Input) | Class (Output) |
 | ------------------ | --------------- | -------------- |
