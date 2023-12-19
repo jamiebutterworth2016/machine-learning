@@ -9,7 +9,7 @@ First use an unsupervised learning model to categorise data into groups (ideally
 Then use a supervised learning model to:
 
 - Read the values of a new data row.
-- Compare the row with existing rows in the groups.
+- Compare the row with existing rows in each group.
 - Place the row into the group with the most similar values.
 
 E.g. Is this animal more like a dog or a cat? It's more like a cat so place it in the cat group.
