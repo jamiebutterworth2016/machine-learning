@@ -8,7 +8,7 @@ Tables don't usually start with a classification column.\
 First use unsupervised learning to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
 Then use a supervised learning model to:
 
-- Read the column values of a data row.
+- Read the values of a data row.
 - Compare the row with rows in the groups.
 - Place the row into the group with the most similar values.
 
