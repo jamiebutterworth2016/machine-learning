@@ -1,7 +1,7 @@
 # Machine learning (ML)
 ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
-Uses data instead of explicit programming. We have all this data. Let's make use of it!
+It finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
 Tables usually don't start with a classification column.\
