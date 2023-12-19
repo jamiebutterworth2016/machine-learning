@@ -30,7 +30,7 @@ You can use the `drop_first` parameter to remove unwanted columns.
 ```
 df = pd.get_dummies(df, columns = ['neighbourhood_group', 'neighbourhood'] , drop_first = True)
 ```
-![one hot encoding](/images/practical/one-hot-encoding.PNG)
+![one hot encoding](/images/practical/one-hot-encoding.png)
 
 ## 3. Remove missing values
 Missing data can be split into three categories:
