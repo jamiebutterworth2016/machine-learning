@@ -3,7 +3,7 @@
 [Helpful commands](helpful-commands.md)\
 [Helpful libraries](import-libraries.md)
 
-# Model design flow
+# Model design steps
 1. [Import dataset](import-dataset.md)
 2. [Exploratory data analysis - visualisation](exploratory-data-analysis.md) (optional)
 3. [Data scrubbing](data-scrubbing.md)
