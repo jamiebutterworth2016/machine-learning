@@ -9,6 +9,11 @@ Computer science -> Data science -> AI -> Machine learning
 - Data can be broken into inputs and outputs.
 - The model analyses both input and outputs.
 
+## Semi-supervised learning
+Tables don't usually start with a classification column.\
+Use unsupervised learning first to generate a classification column.\
+Then use supervised learning to then make predictions.
+
 ## The three self-learning categories
 |                       | Known Input | Known Output |                                                                                                                                                                                                                                    |
 | --------------------- | ----------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
