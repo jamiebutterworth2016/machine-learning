@@ -12,7 +12,7 @@
 4. [Data scrubbing](data-scrubbing.md)
 5. [Pre-model algorithm - unsupervised learning](pre-model-algorithms.md) (optional)
 6. [Split validation](split-validation.md)
-7. [Set algorithm](algorithms.md)
+7. [Set algorithm - supervised learning](algorithms.md)
 8. Predict
 9. [Evaluate](evaluate.md)
 10. Optimise
