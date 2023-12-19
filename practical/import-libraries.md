@@ -56,6 +56,7 @@ from sklearn import metrics
 ![scikit](/images/practical/scikit.PNG)
 
 ## Matplotlib
+`pip install matplotlib`
 ```
 import matplotlib.pyplot as plt
 %matplotlib inline
