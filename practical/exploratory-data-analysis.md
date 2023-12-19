@@ -39,6 +39,7 @@ df.head(10)
 ### Visualisation - Pairplot
 - Use Seaborn to display a pairplot.
 - These are 2D plots. Each plot shows the relationship between two of the columns.
+- What does this mean though? What am I looking for?
 ```
 sns.pairplot(df,vars=['price','number_of_reviews','availability_365'])
 ```
