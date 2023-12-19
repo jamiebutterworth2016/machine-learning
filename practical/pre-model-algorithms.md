@@ -124,7 +124,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-### Create blobs
+### Create blobs (or import CSV)
 Generate a dataset instead of importing.\
 300 samples, 2 features, 4 centers (groups) with a cluster deviation of 4.\
 *What is the different between a center and cluster deviation?*\
