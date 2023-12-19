@@ -1,6 +1,7 @@
 # Unsupervised learning
 Use to split data into groups based on their values.\
-The model does not name the outputted group (unlabelled). We name the group.
+The model does not name the outputted group (unlabelled). We name the group.\
+Requires two columns for X and y axis on 2D plot.
 
 | Issue date (Input) | Mileage (Input) | Class (Output) |
 | ------------------ | --------------- | -------------- |
