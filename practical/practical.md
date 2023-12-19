@@ -5,7 +5,7 @@
 [Helpful commands](helpful-commands.md)
 
 
-# Model design
+# Model design flow
 1. [Import libraries](import-libraries.md)
 2. [Import dataset](import-dataset.md)
 3. [Exploratory data analysis](exploratory-data-analysis.md)
