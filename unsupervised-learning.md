@@ -1,6 +1,6 @@
 # Unsupervised learning
-- Use to split data into groups based on their values.
-- The model does not name the outputted group (unlabelled). We name the group.
+Use to split data into groups based on their values.\
+The model does not name the outputted group (unlabelled). We name the group.
 
 | Issue date (Input) | Mileage (Input) | Class (Output) |
 | ------------------ | --------------- | -------------- |
