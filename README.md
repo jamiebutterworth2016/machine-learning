@@ -5,7 +5,7 @@ It finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
 Tables don't usually start with a classification column.\
-First use unsupervised learning to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
+First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
 Then use a supervised learning model to:
 
 - Read the values of a new data row.
