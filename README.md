@@ -2,9 +2,6 @@
 ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
 Uses data instead of explicit programming. We have all this data. Let's make use of it!\
-A model (explained later) uses experience to find patterns in data.\
-Data can be broken into inputs and outputs.\
-The model analyses both input and outputs.
 
 ## Semi-supervised learning
 Tables usually don't start with a classification column.\
