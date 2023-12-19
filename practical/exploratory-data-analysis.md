@@ -47,6 +47,8 @@ sns.pairplot(df,vars=['price','number_of_reviews','availability_365'])
 
 ### Visualisation - Heatmap
 - Use Seaborn to display a heatmap.
+- Can you show an image?
+- What am I looking for?
 
 ```
 df_corr = df.corr()
