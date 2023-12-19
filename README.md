@@ -4,9 +4,9 @@ ML is self-learning - not explicitly programmed.\
 It finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
-Tables usually don't start with a classification column.\
+Tables don't usually start with a classification column.\
 First use unsupervised learning to split data into groups and generate a classification column.\
-Then use supervised learning to then make predictions.
+Then use supervised learning to make predictions.
 
 ## The three self-learning categories
 |                       | Known Input | Known Output |                                                                                                                                                                                                                                    |
