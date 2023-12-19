@@ -22,7 +22,7 @@ import pandas as pd
 ```
 import numpy as np
 ```
-- Used with Pandas.
+- Installing Pandas also installs NumPy.
 - NumPy = numeric Python.
 - Manage multi-dimensional arrays and matrices.
 - Merge and slice datasets.
