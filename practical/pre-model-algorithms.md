@@ -113,7 +113,7 @@ plt.ylabel('Second Principal Component')
 ```
 
 ## k-means clustering
-Use k-means clustering to split data into natural groupings.
+Use k-means clustering to split data into groups.
 
 ### Import libraries
 ```
