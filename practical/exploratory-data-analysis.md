@@ -1,5 +1,5 @@
 # Exploratory data analysis (EDA)
-- Manage data as a Pandas dataframe.
+- Manage data with Pandas.
 - Visualise data with Seaborn.
 - Common EDA techniques.
 - Summarise the important characteristics of the dataset to preare for further processing and analysis.
