@@ -1,6 +1,6 @@
 # Pre-model algorithms
 An extension of data scrubbing.\
-Unsupervised learning algorithms can be used to clean and reshape data.\
+Unsupervised learning algorithms can be used to clean and reshape (cluster) data.\
 This occurs before the use of a supervised learning algorithm to build the model.
 
 Examples:
