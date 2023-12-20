@@ -8,7 +8,7 @@ Algorithms:
 -  Principal component analysis (PCA)
 
 ## k-means clustering
-Use k-means clustering to split data into groups.
+Use k-means clustering to split data points into clusters.
 
 ### Import dataset
 ```
