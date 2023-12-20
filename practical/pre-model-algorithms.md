@@ -113,71 +113,65 @@ plt.ylabel('Second Principal Component')
 ```
 
 ## k-means clustering
-Use k-means clustering to split data into groups.\
-This walkthrough uses a 2D plot (x and y axis) with annotated data points.\
-The table has three columns:
-- one string column for the annotations
-- one number column for the x axis
-- one number column for the y axis.
+Use k-means clustering to split data into groups.
 
 ### Import dataset
 ```
 import pandas as pd
 df = pd.read_csv('C:/Users/jamie/OneDrive/Documents/csv exports/active-trainers2.csv')
-df = df.sort_values(by='number_of_activities', ascending=True)
 ```
 
 ### Initial plot
-A plot to show the dataset without clustering.
+A plot to show the dataset before applying clusters.\
+This is a 2D plot with annotated data points.\
+The table has three columns:
+- one string column for the annotations
+- one number column for the x axis
+- one number column for the y axis.
 ```
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('TkAgg')
 
-plt.figure(figsize=(8,6))
-plt.scatter(df['trainer'], df['number_of_activities'])
-plt.title('Top trainers')
-plt.xlabel('Trainer')
-plt.ylabel('Number of activities')
-plt.xticks(rotation=90)
+plt.figure(figsize=(10,6))
+plt.scatter(df['text'], df['video'])
+
+for i, name in enumerate(df['learner_name']):
+    plt.annotate(name, (df['text'][i], df['video'][i]), textcoords="offset points", xytext=(5,5), ha='left')
+
+plt.title('Preferred learning method')
+plt.xlabel('Completed text activities')
+plt.ylabel('Completed video activities')
+plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
 
-### Encode string columns
-A k-means clustering model can only handle numbers, not strings.\
-Convert string columns to number columns.\
-The string is coverted to a number, e.g. "some name" will be converted to "1".
+### Create model
+Use the k-means clustering algorithm to split the data points into clusters.
 ```
-from sklearn.preprocessing import LabelEncoder
-label_encoder = LabelEncoder()
-df['encoded_trainer'] = label_encoder.fit_transform(df['trainer'])
-```
-
-### Set algorithm
-Use the k-means clustering algorithm to split the data points into two clusters (groups).
-```
-X = df[['encoded_trainer', 'number_of_activities']]
+X = df[['text', 'video']]
 
 from sklearn.cluster import KMeans
-model = KMeans(n_clusters=2,n_init='auto')
+model = KMeans(n_clusters=7,n_init='auto')
 model.fit(X)
 
-model_predict = model.predict(X)
-centroids = model.cluster_centers_
-df['is_top_trainer'] = model.labels_
+df['learn_method'] = model.labels_
 ```
 
 ### Plot clustered data
-For visualisation, create a plot to view the clustered data points.
+Create a plot to view the clustered data points.
 ```
-plt.figure(figsize=(8,6))
-plt.scatter(df['trainer'], df['number_of_activities'], c=df['is_top_trainer'], s=50, cmap='rainbow')
+plt.figure(figsize=(10,6))
+plt.scatter(df['text'], df['video'], c=df['learn_method'], s=50, cmap='rainbow')
 plt.scatter(model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], c='black', s=200)
-plt.title('Top trainers')
-plt.xlabel('Trainer')
-plt.ylabel('Number of activities')
-plt.xticks(rotation=90)
+
+for i, name in enumerate(df['learner_name']):
+    plt.annotate(name, (df['text'][i], df['video'][i]), textcoords="offset points", xytext=(5,5), ha='left')
+
+plt.title('Preferred learning method')
+plt.xlabel('Completed text activities')
+plt.ylabel('Completed video activities')
 plt.grid(True)
 plt.show()
 ```
