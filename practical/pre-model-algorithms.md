@@ -150,7 +150,7 @@ df['encoded_trainer'] = label_encoder.fit_transform(df['trainer'])
 ```
 
 ### Set algorithm
-Use k-means clustering to find 4 groups of points, each sharing similar attributes.
+Use the k-means clustering algorithm to split the data points into two clusters (groups).
 ```
 X = df[['encoded_trainer', 'number_of_activities']]
 
@@ -164,6 +164,7 @@ df['is_top_trainer'] = model.labels_
 ```
 
 ### Plot clustered data
+For visualisation, create a plot to view the clustered data points.
 ```
 plt.figure(figsize=(8,6))
 plt.scatter(df['trainer'], df['number_of_activities'], c=df['is_top_trainer'], s=50, cmap='rainbow')
@@ -175,26 +176,6 @@ plt.xticks(rotation=90)
 plt.grid(True)
 plt.show()
 ```
-
-### Create groups
-Generate and print the 4 centroid coordinates.\
-[x y]
-```
-model_predict = model.predict(X)
-centroids = model.cluster_centers_
-print(model.cluster_centers_)
-```
-
-### Plot groups
-300 points are grouped into 4.\
-Reduces a dataset with a high number of points into a more manageable number of cluster centroids.
-```
-plt.figure(figsize=(7,5))
-plt.scatter(X[:,0], X[:,1], c=model_predict, s=50, cmap='rainbow')
-plt.scatter(centroids[:,0], centroids[:,1], c='black', s=200, alpha=1)
-```
-
-![cluster plot](/images/practical/cluster-plot.png)
 
 ### Scree plot
 Use a scree plot to find the appropriate number of clusters.\
