@@ -173,6 +173,7 @@ plt.title('Preferred learning method')
 plt.xlabel('Completed text activities')
 plt.ylabel('Completed video activities')
 plt.grid(True)
+plt.tight_layout()
 plt.show()
 ```
 
