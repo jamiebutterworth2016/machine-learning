@@ -146,7 +146,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
-![k-means cluster plot](/images/practical/k-means-cluster-plot.PNG)
+![k-means cluster plot](/images/practical/k-means-cluster-plot.png)
 
 ### Create model
 Use the k-means clustering algorithm to split the data points into clusters.
@@ -182,7 +182,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
-![k-means cluster plot](/images/practical/k-means-cluster-plot-clustered.PNG)
+![k-means cluster plot](/images/practical/k-means-cluster-plot-clustered.png)
 
 ### Scree plot
 Use a scree plot to find the best number of clusters.\
