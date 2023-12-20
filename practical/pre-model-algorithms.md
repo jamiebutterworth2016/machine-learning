@@ -17,7 +17,7 @@ df = pd.read_csv('C:/Users/jamie/OneDrive/Documents/csv exports/active-trainers2
 ```
 
 ### Initial plot
-A plot to show the dataset before applying clusters.\
+Create a plot to view the data before applying clusters.\
 This is a 2D plot with annotated data points.\
 The table has three columns:
 - one string column for the annotations
