@@ -159,6 +159,11 @@ model.fit(X)
 df['learn_method'] = model.labels_
 ```
 
+### Add cluster column to table
+```
+df['learn_method'] = model.labels_
+```
+
 ### Plot clustered data
 Create a plot to view the clustered data points.
 ```
@@ -178,7 +183,7 @@ plt.show()
 ```
 
 ### Scree plot
-Use a scree plot to find the appropriate number of clusters.\
+Use a scree plot to find the best number of clusters.\
 *Does this need to happen before we specify the number of clusters?*\
 Visualises the degree of scattering (variance) by comparing the distortion for each variation of clusters.\
 Distortion is the distance between the centroid and other points in the cluster.\
