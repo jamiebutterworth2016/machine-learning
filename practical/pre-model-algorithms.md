@@ -113,7 +113,12 @@ plt.ylabel('Second Principal Component')
 ```
 
 ## k-means clustering
-Use k-means clustering to split data into groups.
+Use k-means clustering to split data into groups.\
+This walkthrough uses a 2D plot (x and y axis) with annotated data points.\
+The table has three columns:
+- one string column for the annotations
+- one number column for the x axis
+- one number column for the y axis.
 
 ### Import dataset
 ```
