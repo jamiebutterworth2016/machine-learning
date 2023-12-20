@@ -144,23 +144,58 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-### Create blobs (or import CSV)
-Generate a dataset instead of importing.\
-300 samples, 2 features, 4 centers (groups) with a cluster deviation of 4.\
-*What is the different between a center and cluster deviation?*\
-Plot the data to check what it looks like so far.
+### Import dataset
 ```
-X, y = make_blobs(n_samples=300, n_features=2, centers=4, cluster_std=4, random_state=10)
-plt.figure(figsize=(7,5))
-plt.scatter(X[:,0],X[:,1])
+import pandas as pd
+df = pd.read_csv('C:/Users/jamie/OneDrive/Documents/csv exports/active-trainers2.csv')
+df = df.sort_values(by='number_of_activities', ascending=True)
 ```
-![blob plot](/images/practical/blob-plot.png)
+
+### Initial plot
+A plot to show the dataset without clustering.
+```
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('TkAgg')
+
+plt.figure(figsize=(8,6))
+plt.scatter(df['trainer'], df['number_of_activities'])
+plt.title('Top trainers')
+plt.xlabel('Trainer')
+plt.ylabel('Number of activities')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.show()
+```
 
 ### Set algorithm
 Use k-means clustering to find 4 groups of points, each sharing similar attributes.
 ```
-model = KMeans(n_clusters=4)
+from sklearn.preprocessing import LabelEncoder
+label_encoder = LabelEncoder()
+df['encoded_trainer'] = label_encoder.fit_transform(df['trainer'])
+X = df[['encoded_trainer', 'number_of_activities']]
+
+from sklearn.cluster import KMeans
+model = KMeans(n_clusters=2,n_init='auto')
 model.fit(X)
+
+model_predict = model.predict(X)
+centroids = model.cluster_centers_
+df['is_top_trainer'] = model.labels_
+```
+
+### Plot clustered data
+```
+plt.figure(figsize=(8,6))
+plt.scatter(df['trainer'], df['number_of_activities'], c=df['is_top_trainer'], s=50, cmap='rainbow')
+plt.scatter(model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], c='black', s=200)
+plt.title('Top trainers')
+plt.xlabel('Trainer')
+plt.ylabel('Number of activities')
+plt.xticks(rotation=90)
+plt.grid(True)
+plt.show()
 ```
 
 ### Create groups
