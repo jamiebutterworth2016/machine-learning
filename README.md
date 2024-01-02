@@ -2,7 +2,6 @@
 This guide is split into theory and practical. The theory is required to carry out the practical.\
 If you feel you already know enough theory, you can [skip to practical.](/practical/practical.md)
 
-
 ## About
 ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
@@ -11,7 +10,7 @@ The model finds patterns in data. We have all this data. Let's make use of it!
 ## Semi-supervised learning
 Algorithms are split into categories: unsupervised learning and supervised learning.\
 Practically, unsupervised learning is used first before supervised learning can be used.\
-This is semi-supervised learning.\
+This is semi-supervised learning.
 
 1. Tables don't usually start with a classification column, i.e. rows aren't usually classified initially. First use an unsupervised learning model to classify data into groups (ideally two groups for simplicity) and generate a classification column.
 2. Then use a supervised learning model to:
@@ -24,8 +23,8 @@ E.g. Is this animal more like a dog or a cat? It's more like a cat so place it i
 ## The three self-learning categories
 |                       | Known Input | Known Output |                                                                                                                                                                                                                                    |
 | --------------------- | ----------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Unsupervised learning](theory/unsupervised-learning.md)  | Y           |              | The model splits data into groups.                                                                                 |
-| [Supervised learning](theory/supervised-learning.md)   | Y           | Y            | Feed existing input and output pairs into the model so it learns the patterns between the pairs.<br/>The model uses this learnt pattern to read new inputs and predict their corresponding outputs.                                                     |
+| [Unsupervised learning](theory/unsupervised-learning/unsupervised-learning.md)  | Y           |              | The model splits data into groups.                                                                                 |
+| [Supervised learning](theory/supervised-learning/supervised-learning.md)   | Y           | Y            | Feed existing input and output pairs into the model so it learns the patterns between the pairs.<br/>The model uses this learnt pattern to read new inputs and predict their corresponding outputs.                                                     |
 | Reinforced learning   |             | Y            | The opposite of unsupervised learning as only outputs are known, not inputs. Random input (e.g. random chess moves) is fed into the model and graded until the known output is achieved (e.g. win a game of chess). desired output |
 
 <br/><br/>
