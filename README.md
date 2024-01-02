@@ -14,9 +14,9 @@ Practially, unsupervised learning is required first before supervised learning c
 Tables don't usually start with a classification column, i.e. rows aren't usually classified.
 1. First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.
 2. Then use a supervised learning model to:
-- Read the values of a new data row.
-- Compare the row with existing rows in each group.
-- Place the row into the group with the most similar values.
+    - Read the values of a new data row.
+    - Compare the row with existing rows in each group.
+    - Place the row into the group with the most similar values.
 
 E.g. Is this animal more like a dog or a cat? It's more like a cat so place it in the cat group.
 
