@@ -65,7 +65,9 @@ Check the total number of missing values.
 df.isnull().sum()
 ```
 
-We now have a table with many numeric columns. We need to reduce the number of numeric columns down to two.\
+## Reducing numeric columns to two
+We now have a table with many numeric columns.\
+We need to reduce the number of numeric columns down to two.\
 Use a heatmap to analyse the correlation between numeric columns.
 ```
 df_heat = df.corr()
