@@ -13,8 +13,8 @@
 
 - The model requires a table with two numeric columns.
 - The data points are plotted on a graph called a *scatterplot*.
-    - The x axis is used for the first column.
-    - The y axis is used for the second column.
+    - The first column value is plotted along the x axis.
+    - The second column value is plotted along the y axis.
 - The model generates a line called a *hyperplane*.
 - The line is positioned with minimal distance between the line and each data point.
 - The model can then use this line to make **numeric predictions**.
