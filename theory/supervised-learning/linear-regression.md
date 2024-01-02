@@ -11,9 +11,10 @@
 
 ![linear regression](/images/linear%20regression.png)
 
-- The graph is a *scatterplot*. The model generates a line called a *hyperplane*. We then use this line to make **numeric predictions**.
+- The graph is a *scatterplot*. The model generates a line called a *hyperplane*. The model can then use this line to make **numeric predictions**.
 - The line is positioned with minimal distance between the line and each data point.
-- You can then find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
+- You can then find a value on the x axis (input) and go directly upwards until you reach the line. When you reach the line, you go to the left until you reach the y axis. The value of the y axis is a prediction of the input value's corresponding output value.
+- This is the *linear relationship* between input and output.
 - The nearer the data point is to the line (vertically), the more accurate the predictions is.
 - The distance between the line and the data point is the *error*.
 - I can predict an output by choosing an input on the X axis, going up to the line and reading the output on the y axis.
