@@ -24,8 +24,8 @@ E.g. Is this animal more like a dog or a cat? It's more like a cat so place it i
 ## The three self-learning categories
 |                       | Known Input | Known Output |                                                                                                                                                                                                                                    |
 | --------------------- | ----------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Unsupervised learning | Y           |              | The model splits data into groups.<br/>[About unsupervised learning.](unsupervised-learning.md)                                                                                  |
-| Supervised learning   | Y           | Y            | Feed existing input and output pairs into the model so it learns the patterns between the pairs.<br/>The model uses this learnt pattern to read new inputs and predict their corresponding outputs.<br/>[About supervised learning.](supervised-learning.md)                                                     |
+| [Unsupervised learning](unsupervised-learning.md)  | Y           |              | The model splits data into groups.                                                                                 |
+| [Supervised learning.](supervised-learning.md)   | Y           | Y            | Feed existing input and output pairs into the model so it learns the patterns between the pairs.<br/>The model uses this learnt pattern to read new inputs and predict their corresponding outputs.                                                     |
 | Reinforced learning   |             | Y            | The opposite of unsupervised learning as only outputs are known, not inputs. Random input (e.g. random chess moves) is fed into the model and graded until the known output is achieved (e.g. win a game of chess). desired output |
 
 <br/><br/>
