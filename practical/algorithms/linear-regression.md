@@ -31,7 +31,7 @@ import pandas as pd
 df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
 ```
 
-## Data scrubbing and analysis
+## Data scrub and analysis
 Remove non numeric columns.\
 For the remaining numeric columns, keep a small number of numeric columns which explain a large proportion of variance. _Explain!_\
 Remove the rest.
@@ -65,7 +65,8 @@ Check the total number of missing values.
 df.isnull().sum()
 ```
 
-Use a heatmap to analyse the correlation between variables.
+We now have a table with many numeric columns. We need to reduce the number of numeric columns down to two.\
+Use a heatmap to analyse the correlation between numeric columns.
 ```
 df_heat = df.corr()
 import seaborn as sns
