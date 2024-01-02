@@ -116,7 +116,7 @@ df.dropna(axis=0, how='any', thresh=None, subset=None, inplace=True)
 ```
 
 Check the remaining number of rows.\
-20800 is enough rows to build the model.
+For the sample dataset, 20800 rows are enough to build the model.
 ```
 df.shape
 ```
@@ -138,13 +138,13 @@ model.fit(X_train, y_train)
 ```
 
 Find y intercept.\
-Result should be `282725.3156777688`
+For the sample dataset, the result should be `282725.3156777688`
 ```
 model.intercept_
 ```
 
 Find X coefficients.\
-Result should be `array([269450.10790036,-37787.76622417,207173.05927097,47417.17159475])`
+For the sample dataset, the result should be `array([269450.10790036,-37787.76622417,207173.05927097,47417.17159475])`
 ```
 model.coef_
 ```
