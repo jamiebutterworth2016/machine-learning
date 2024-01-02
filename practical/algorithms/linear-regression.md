@@ -2,19 +2,21 @@
 
 [Theory](/theory/supervised-learning/linear-regression.md)
 
-Start with a table which has at least two numeric columns.
-
 ## Preparation
-1. Remove or fill missing values.
-2. Choose the independent variables which correlate most wth the dependent variable.
+1. Start with a table which has at least two numeric columns.
+2. Remove or fill missing values.
+3. Choose the independent variables which correlate most wth the dependent variable.
 
 _If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
 You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
 
+## Libraries required
+- pandas
+- seaborn
+- sklearn
+
 ## Import libraries
 ```
-import pandas as pd
-import seaborn as sns
 %matplotlib inline
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -23,15 +25,18 @@ from sklearn import metrics
 
 ## Import dataset
 The dataset is at `/practical/datasets/Melbourne_housing_FULL.csv`
+Use this if you don't already have a table.
 [Alternative download link](https://www.kaggle.com/anthonypino/melbourne-housing-market/#Melbourne_housing_FULL.csv)
 
 ```
+import pandas as pd
 df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
 ```
 
 ## Data scrubbing and analysis
-Keep a small number of numeric variables which explain a large proportion of variance.\
-Remove the remaining non numeric variables.
+Remove non numeric columns.\
+For the remaining numeric columns, keep a small number of numeric columns which explain a large proportion of variance. _Explain!_\
+Remove the rest.
 ```
 del df['Address']
 del df['Method']
@@ -65,6 +70,7 @@ df.isnull().sum()
 Use a heatmap to analyse the correlation between variables.
 ```
 df_heat = df.corr()
+import seaborn as sns
 sns.heatmap(df_heat, annot=True, cmap='coolwarm')
 ```
 
