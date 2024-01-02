@@ -17,7 +17,7 @@
     - The second column value is plotted along the y axis.
 - The model generates a line called a *hyperplane*.
 - The line is positioned with minimal distance between the line and each data point.
-- The model can then use this line to make **numeric predictions**.
+- The model can then use this line to make **numeric predictions**. If a new row is inputted into the table with an input (X), the model can trace the line to generate the output (y).
 - You can find a value on the x axis (input) and vertically trace upwards until you reach the line. When you reach the line, you go to the left until you reach the y axis. The value of the y axis is a prediction of the input value's corresponding output value.
 - This is the *linear relationship* between input and output.
 - The nearer the data point is to the line (vertically), the more accurate the predictions is.
