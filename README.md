@@ -12,9 +12,8 @@ It finds patterns in data. We have all this data. Let's make use of it!
 Algorithms are split into categories: unsupervised learning and supervised learning.\
 Practially, unsupervised learning is required first before supervised learning can be applied.\
 Tables don't usually start with a classification column, i.e. rows aren't usually classified.\
-First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
-Then use a supervised learning model to:
-
+1. First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
+2. Then use a supervised learning model to:
 - Read the values of a new data row.
 - Compare the row with existing rows in each group.
 - Place the row into the group with the most similar values.
