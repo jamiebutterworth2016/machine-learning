@@ -24,8 +24,7 @@ from sklearn import metrics
 ```
 
 ## Import dataset
-The dataset is at `/practical/datasets/Melbourne_housing_FULL.csv`\
-Use this if you don't already have a table.\
+If you don't already have a table, you can use the example dataset at `/practical/datasets/Melbourne_housing_FULL.csv`\
 [Alternative download link](https://www.kaggle.com/anthonypino/melbourne-housing-market/#Melbourne_housing_FULL.csv)
 ```
 import pandas as pd
