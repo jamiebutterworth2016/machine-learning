@@ -2,14 +2,6 @@
 
 [Theory](/theory/supervised-learning/linear-regression.md)
 
-## Preparation
-1. Start with a table which has at least two numeric columns.
-2. Remove or fill missing values.
-3. Choose the independent variables which correlate most wth the dependent variable.
-
-_If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
-You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
-
 ## Libraries required
 - pandas
 - seaborn
@@ -66,6 +58,9 @@ df.isnull().sum()
 ```
 
 ## Reduce numeric columns down to two
+_If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
+You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
+
 Use a heatmap to analyse the correlation between numeric columns.
 ```
 df_heat = df.corr()
@@ -82,17 +77,16 @@ Use the methods below to remove independent variables until we only have two lef
 The high red numbers indicate those two independent variables are strongly correlated.\
 The heatmap shows **Bedroom2** is highly correlated with **Rooms** - 0.95.\
 One of these independent variables needs to be removed.\
-Find a reason to remove one of these variables.\
+Find a reason to remove one of these variables over the other.\
 Example: Remove **Bedroom2** as it is missing a lot of values.
 ```
 del df['Bedroom2']
 ```
 
 ### Remove independent variables with a low correlation to the dependent variable
-The dependent variable is **Price**.\
-Independent variables **Landsize** and **Propertycount** can be removed because they have a very low correlation to **Price**.
+These are independent variables with low blue numbers down the price column.
+Remove **Landsize** and **Propertycount** as they have a very low correlation to **Price**.
 ```
-del df['Bedroom2']
 del df['Landsize']
 del df['Propertycount']
 ```
