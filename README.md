@@ -10,7 +10,7 @@ The model finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
 Algorithms are split into categories: unsupervised learning and supervised learning.\
-Practically, unsupervised learning is required first before supervised learning can be applied.\
+Practically, unsupervised learning is used first before supervised learning can be used.\
 This is semi-supervised learning.\
 Tables don't usually start with a classification column, i.e. rows aren't usually classified.
 1. First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.
