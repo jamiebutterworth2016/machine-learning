@@ -30,6 +30,8 @@ E.g. Is this animal more like a dog or a cat? It's more like a cat so place it i
 
 <br/><br/>
 
+_The following requires tidying up!_
+
 [The theory behind building a model](build-model-theory.md)
 
 
