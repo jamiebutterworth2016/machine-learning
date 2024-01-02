@@ -13,10 +13,10 @@ Both inputs and output are known.
 | ----------------------------- | ------------------------ |
 | [Linear regression](/theory/supervised-learning/linear-regression.md)             | Numeric predictions      |
 | [Logistic regression](/theory/supervised-learning/logistic-regression.md)           | Classification           |
-| k-nearest neighbours (k-NN)   | Classification           |
-| Support vector machines (SVM) | Classification           |
-| Decision trees                |                          |
-| Neural networks               |                          |
+| [k-nearest neighbours (k-NN)](/theory/supervised-learning/k-nearest-neighbors.md))   | Classification           |
+| [Support vector machines (SVM)](/theory/supervised-learning/support-vector-machines.md)) | Classification           |
+| [Decision trees](/theory/supervised-learning/decision-trees.md)                |                          |
+| [Neural networks](/theory/supervised-learning/neural-networks.md)               |                          |
 
 <br/>
 
