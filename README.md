@@ -9,6 +9,8 @@ ML is self-learning - not explicitly programmed.\
 It finds patterns in data. We have all this data. Let's make use of it!
 
 ## Semi-supervised learning
+Algorithms are split into categories: unsupervised learning and supervised learning.\
+Practially, unsupervised learning is required first before supervised learning can be applied.\
 Tables don't usually start with a classification column.\
 First use an unsupervised learning model to categorise data into groups (ideally two groups for simplicity) and generate a classification column.\
 Then use a supervised learning model to:
