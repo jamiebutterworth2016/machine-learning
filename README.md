@@ -1,6 +1,6 @@
 # Machine learning (ML)
 This guide is split into theory and practical. The theory is required to carry out the practical.\
-If you already know enough theory you can [skip to practical](/practical/practical.md)
+If you already know enough theory you can [skip to practical](/practical/practical.md).
 
 ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
