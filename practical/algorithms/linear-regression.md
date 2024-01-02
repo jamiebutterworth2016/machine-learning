@@ -2,6 +2,8 @@
 
 [Theory](/theory/supervised-learning/linear-regression.md)
 
+Start with a table which has at least two numeric columns.
+
 ## Preparation
 1. Remove or fill missing values.
 2. Choose the independent variables which correlate most wth the dependent variable.
