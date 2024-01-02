@@ -18,8 +18,6 @@
 
 ![linear regression](/images/linear%20regression.png "linear regression")
 
-<br/>
-
 ## Multiple linear regression
 - Multiple inputs, single output.
 - The output must be a number.
