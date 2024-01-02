@@ -49,7 +49,7 @@ df.shape
 
 Check for missing values (NaN).
 ```
-def.head()
+df.head()
 ```
 
 Check the total number of missing values.
@@ -91,19 +91,19 @@ del df['Landsize']
 del df['Propertycount']
 ```
 
-### Remove independent variables with high number of missing rows
+### Remove independent variables with a high number of missing rows
 Remove **BuildingArea** as it has a high number of missing rows - 21,115.\
 **BuildingArea** also has low correlation with dependent variable **Price** - another reason to remove **BuildingArea**.
 ```
+print(df['BuildingArea'].isna().sum())
 del df['BuildingArea']
 ```
 
-### Fill missing values with mean
-Use the mean to fill variables with partial correlation to dependent variable **Price**.
-
-Avoid filling values to variables with significant correlation to dependent variable **Price** and instead remove those missing values row-by-row.
-
+### Fill missing values with the mean
+For independent variables with low-mid correlation to the dependent variable, use the mean of the independent variable's values to fill missing values.\
+_For independent variables with significant correlation to the dependent variable, remove the independent variable's missing values row-by-row._
 ```
+print(df['Car'].isna().sum())
 df['Car'].fillna(df['Car'].mean(), inplace=True)
 ```
 
