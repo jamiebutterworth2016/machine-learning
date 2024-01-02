@@ -11,7 +11,7 @@ Both inputs and output are known.
 
 | Algorithm                     | Used for                 |
 | ----------------------------- | ------------------------ |
-| Linear regression             | Numeric predictions      |
+| [Linear regression](/theory/supervised-learning/linear-regression.md)             | Numeric predictions      |
 | Logistic regression           | Classification           |
 | k-nearest neighbours (k-NN)   | Classification           |
 | Support vector machines (SVM) | Classification           |
