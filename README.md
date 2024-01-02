@@ -1,3 +1,5 @@
+[Skip to practical](/practical/practical.md)
+
 # Machine learning (ML)
 ML is a subset of AI, a subset of data science, a subset of computer science.\
 ML is self-learning - not explicitly programmed.\
