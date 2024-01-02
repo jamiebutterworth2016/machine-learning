@@ -4,7 +4,7 @@ Plots a straight line or plane called the hyperplane.\
 Predicts a numerical target value of data inputs by determining the dependence between the dependent variable (y) and the independent variables (X).\
 The goal of the line is to position the line with with minimal distance between the line and each point.
 
-[Theory](/theory/supervised-learning/supervised-learning.md)
+[Theory](/theory/supervised-learning/linear-regression.md)
 
 ![linear regression](/images/practical/linear-regression.png)
 
