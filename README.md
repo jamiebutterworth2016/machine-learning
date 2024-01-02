@@ -1,6 +1,6 @@
 # Machine learning (ML)
 This guide is split into theory and practical. The theory is required to carry out the practical.\
-If you already know enough theory, you can [skip to practical.](/practical/practical.md)
+If you feel you already know enough theory, you can [skip to practical.](/practical/practical.md)
 
 
 ## About
