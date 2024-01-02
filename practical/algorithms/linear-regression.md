@@ -6,8 +6,8 @@
 1. Remove or fill missing values.
 2. Choose the independent variables which correlate most wth the dependent variable.
 
-If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
-You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant.
+_If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
+You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
 
 ## Import libraries
 ```
@@ -55,7 +55,7 @@ Check for missing values (NaN).
 def.head()
 ```
 
-Check the total number of missing values.\
+Check the total number of missing values.
 ```
 df.isnull().sum()
 ```
