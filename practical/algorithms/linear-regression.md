@@ -66,9 +66,7 @@ df.isnull().sum()
 ```
 
 ## Reduce numeric columns down to two
-Use a heatmap to analyse the correlation between numeric columns.\
-The dependent variable is **Price**. The others are independent variables.\
-Use the methods below to remove independent variables until we only have two left.
+Use a heatmap to analyse the correlation between numeric columns.
 ```
 df_heat = df.corr()
 import seaborn as sns
@@ -77,15 +75,22 @@ sns.heatmap(df_heat, annot=True, cmap='coolwarm')
 
 ![heatmap](/images/practical/heatmap.png)
 
+The dependent variable is **Price**. The others are independent variables.\
+Use the methods below to remove independent variables until we only have two left.
+
 ### Independent variables should not be strongly correlated with each other
-**Bedroom2** is highly correlated with **Rooms** - 0.95.\
+The high red numbers indicate those two independent variables are strongly correlated.\
+The heatmap shows **Bedroom2** is highly correlated with **Rooms** - 0.95.\
+One of these independent variables needs to be removed.\
 Find a reason to remove one of these variables.\
-Example: Remove **Bedroom2** as is a lot of missing values.
+Example: Remove **Bedroom2** as it is missing a lot of values.
+```
+del df['Bedroom2']
+```
 
 ### Remove independent variables with a low correlation to the dependent variable
 The dependent variable is **Price**.\
 Independent variables **Landsize** and **Propertycount** can be removed because they have a very low correlation to **Price**.
-
 ```
 del df['Bedroom2']
 del df['Landsize']
