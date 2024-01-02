@@ -66,9 +66,9 @@ df.isnull().sum()
 ```
 
 ## Reduce numeric columns down to two
-Use a heatmap to analyse the correlation between numeric columns.
-The dependent variable is **Price**.\
-All the others are independent variables.
+Use a heatmap to analyse the correlation between numeric columns.\
+The dependent variable is **Price**. The others are independent variables.\
+Use the methods below to remove independent variables until we only have two left.
 ```
 df_heat = df.corr()
 import seaborn as sns
