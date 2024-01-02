@@ -1,12 +1,5 @@
 # Linear regression
 
-Supervised learning model.\
-Plots a straight line or plane called the hyperplane.\
-Predicts a numerical target value of data inputs by determining the dependence between the dependent variable (y) and the independent variables (X).\
-The goal of the line is to position the line with with minimal distance between the line and each point.
-
-![linear regression](/images/practical/linear-regression.png)
-
 | Season (Input / X) | Viewers (Output / y) |
 | ------------------ | -------------------- |
 | 1                  | 19                   |
@@ -16,14 +9,16 @@ The goal of the line is to position the line with with minimal distance between 
 
 <br/>
 
-- The graph is a *scatterplot*. The line is a *hyperplane* we use to make **numeric predictions**.
-- I can find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
-- The nearer the value is to the line (vertically), the more accurate the model's predictions are.
-- The distance between the line and a value is the *error*.
+![linear regression](/images/linear%20regression.png)
+
+- The graph is a *scatterplot*. The model generates a line called a *hyperplane*. We then use this line to make **numeric predictions**.
+- The line is positioned with minimal distance between the line and each data point.
+- You can then find an input (X) and follow the line to see where the output (y) will be. This is the *linear relationship* between input and output.
+- The nearer the data point is to the line (vertically), the more accurate the predictions is.
+- The distance between the line and the data point is the *error*.
 - I can predict an output by choosing an input on the X axis, going up to the line and reading the output on the y axis.
 - _It is difficult to use linear regression on tables with too few numeric columns._
 
-![linear regression](/images/linear%20regression.png "linear regression")
 
 ## Multiple linear regression
 - Multiple inputs, single output.
