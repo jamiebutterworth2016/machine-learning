@@ -7,14 +7,6 @@
 - seaborn
 - sklearn
 
-## Import libraries
-```
-%matplotlib inline
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn import metrics
-```
-
 ## Import dataset
 If you don't have a table, you can use the sample dataset at `/practical/datasets/Melbourne_housing_FULL.csv`\
 [Alternative download link](https://www.kaggle.com/anthonypino/melbourne-housing-market/#Melbourne_housing_FULL.csv)
@@ -129,11 +121,13 @@ Assign X and y variables.
 X = df[['Rooms','Distance','Bathroom','Car']]
 y = df['Price']
 
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=10)
 ```
 
 ## Set algorithm
 ```
+from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 
 model.fit(X_train, y_train)
@@ -182,6 +176,7 @@ Use mean absolute error to compare the difference between the expected price pre
 ```
 prediction = model.predict(X_test)
 
+from sklearn import metrics
 metrics.mean_absolute_error(y_test, prediction)
 ```
 
