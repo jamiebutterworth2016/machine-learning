@@ -36,12 +36,12 @@ del df['Suburb']
 del df['CouncilArea']
 ```
 
-Check the shape of the dataset - the number of rows and columns (features).
+Check the number of remaining rows and columns.
 ```
 df.shape
 ```
 
-Check for missing values (NaN).
+Check missing values (NaN).
 ```
 df.head()
 ```
@@ -51,7 +51,7 @@ Check the total number of missing values.
 df.isnull().sum()
 ```
 
-### Reduce numeric columns down to two
+### Reduce numeric columns
 _If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
 You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
 
@@ -65,7 +65,7 @@ sns.heatmap(df_heat, annot=True, cmap='coolwarm')
 ![heatmap](/images/practical/heatmap.png)
 
 The dependent variable is **Price**. The others are independent variables.\
-Use the methods below to remove independent variables until there are only two left.
+Use the methods below to remove independent variables.
 
 #### Independent variables should not be strongly correlated with each other
 The high red numbers indicate those two independent variables are strongly correlated.\
@@ -134,6 +134,8 @@ model.fit(X_train, y_train)
 ```
 
 Find y intercept.\
+The y intercept is the the point at which the hyperplane crosses the y axis.\
+_For what purpose?_
 For the sample dataset, the result should be `282725.3156777688`
 ```
 model.intercept_
