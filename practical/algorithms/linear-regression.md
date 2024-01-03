@@ -16,7 +16,7 @@ from sklearn import metrics
 ```
 
 ## Import dataset
-If you don't already have a table, you can use the example dataset at `/practical/datasets/Melbourne_housing_FULL.csv`\
+If you don't have a table, you can use the sample dataset at `/practical/datasets/Melbourne_housing_FULL.csv`\
 [Alternative download link](https://www.kaggle.com/anthonypino/melbourne-housing-market/#Melbourne_housing_FULL.csv)
 ```
 import pandas as pd
@@ -24,7 +24,9 @@ df = pd.read_csv('~/Downloads/Melbourne_housing_FULL.csv')
 ```
 
 ## Data scrub and analysis
-Remove non numeric columns.\
+
+### Remove non numeric columns
+
 For the remaining numeric columns, keep a small number of numeric columns which explain a large proportion of variance. _Explain!_\
 Remove the rest.
 ```
@@ -57,7 +59,7 @@ Check the total number of missing values.
 df.isnull().sum()
 ```
 
-## Reduce numeric columns down to two
+### Reduce numeric columns down to two
 _If a strong linear correlation exists between two or more independent variables, this leads to a problem called collinearity where individual variables are not unique.\
 You can still rely on the model's accuracy but you won't know which similar variables are influential and which are redundant._
 
@@ -71,9 +73,9 @@ sns.heatmap(df_heat, annot=True, cmap='coolwarm')
 ![heatmap](/images/practical/heatmap.png)
 
 The dependent variable is **Price**. The others are independent variables.\
-Use the methods below to remove independent variables until we only have two left.
+Use the methods below to remove independent variables until there are only two left.
 
-### Independent variables should not be strongly correlated with each other
+#### Independent variables should not be strongly correlated with each other
 The high red numbers indicate those two independent variables are strongly correlated.\
 The heatmap shows **Bedroom2** is highly correlated with **Rooms** - 0.95.\
 One of these independent variables needs to be removed.\
@@ -83,7 +85,7 @@ Example: Remove **Bedroom2** as it is missing a lot of values.
 del df['Bedroom2']
 ```
 
-### Remove independent variables with a low correlation to the dependent variable
+#### Remove independent variables with a low correlation to the dependent variable
 These are independent variables with low blue numbers down the price column.
 Remove **Landsize** and **Propertycount** as they have a very low correlation to **Price**.
 ```
@@ -91,7 +93,7 @@ del df['Landsize']
 del df['Propertycount']
 ```
 
-### Remove independent variables with a high number of missing rows
+#### Remove independent variables with a high number of missing rows
 Remove **BuildingArea** as it has a high number of missing rows - 21,115.\
 **BuildingArea** also has low correlation with dependent variable **Price** - another reason to remove **BuildingArea**.
 ```
@@ -99,7 +101,7 @@ print(df['BuildingArea'].isna().sum())
 del df['BuildingArea']
 ```
 
-### Fill missing values with the mean
+#### Fill missing values with the mean
 For independent variables with low-mid correlation to the dependent variable, use the mean of the independent variable's values to fill missing values.\
 _For independent variables with significant correlation to the dependent variable, remove the independent variable's missing values row-by-row._
 ```
@@ -107,7 +109,7 @@ print(df['Car'].isna().sum())
 df['Car'].fillna(df['Car'].mean(), inplace=True)
 ```
 
-### Remove rows for variables with small number of missing values
+#### Remove rows for variables with small number of missing values
 This is a better option than removing an entire variable when it only has a small number of missing values.\
 This is also a better option than artificially filling values with mean values.\
 **It's important to remove rows only after removing variables and filling missing values to preserve more rows.**
