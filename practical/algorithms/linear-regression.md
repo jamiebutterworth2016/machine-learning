@@ -4,7 +4,7 @@
 
 ## Libraries required
 - pandas
-- seaborn
+- seaborn (heatmap)
 - sklearn
 
 ## Import dataset
