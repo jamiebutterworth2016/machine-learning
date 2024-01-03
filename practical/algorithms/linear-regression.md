@@ -38,17 +38,12 @@ del df['Suburb']
 del df['CouncilArea']
 ```
 
-Check the number of remaining rows and columns.
-```
-df.shape
-```
-
-Check missing values (NaN).
+Check remaining columns and missing values (NaN).
 ```
 df.head()
 ```
 
-Check the total number of missing values.
+Check the total number of missing values for each column.
 ```
 df.isnull().sum()
 ```
