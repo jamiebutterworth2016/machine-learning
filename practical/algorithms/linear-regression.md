@@ -2,6 +2,8 @@
 
 [Theory](/theory/supervised-learning/linear-regression.md)
 
+This practical exercise uses multiple linear regression as multiple independent variables are used to predict the dependent variable.
+
 ## Libraries required
 - pandas
 - seaborn (heatmap)
